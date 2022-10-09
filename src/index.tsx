@@ -1,20 +1,5 @@
-import { NativeModules, Platform } from 'react-native';
+import ThemeProvider, { TThemeProvider } from './theme/ThemeProvider';
+import useTheme from './theme/useTheme';
 
-const LINKING_ERROR =
-  `The package 'matrix' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
-  '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo managed workflow\n';
-
-const Matrix = NativeModules.Matrix  ? NativeModules.Matrix  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
-
-export function multiply(a: number, b: number): Promise<number> {
-  return Matrix.multiply(a, b);
-}
+export { ThemeProvider, useTheme };
+export type { TThemeProvider };

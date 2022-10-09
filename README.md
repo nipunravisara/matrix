@@ -1,29 +1,3 @@
-# matrix
-React-native UI library
-## Installation
+<h1 align="center">Matrix UI</h1>
 
-```sh
-npm install matrix
-```
-
-## Usage
-
-```js
-import { multiply } from "matrix";
-
-// ...
-
-const result = await multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+An enterprise UI library for React-Native.
