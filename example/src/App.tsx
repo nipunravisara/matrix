@@ -7,7 +7,7 @@ export default function App(): JSX.Element {
   return (
     <ThemeProvider>
       <NavigationContainer>
-        <Navigator initialScreen={'HeaderDemo'} />
+        <Navigator initialScreen={'TextShowcase'} />
       </NavigationContainer>
     </ThemeProvider>
   );
