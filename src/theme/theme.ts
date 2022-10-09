@@ -289,95 +289,96 @@ interface TTheme {
     ColorAllBaseWhite: string;
   };
   typography: {
-    TypographyHeadingHeading1FontSize: number;
-    TypographyHeadingHeading1FontFamily: string;
-    TypographyHeadingHeading1FontWeight: string;
-    TypographyHeadingHeading1LetterSpacing: number;
-    TypographyHeadingHeading1LineHeight: number;
-
-    TypographyHeadingHeading2FontSize: number;
-    TypographyHeadingHeading2FontFamily: string;
-    TypographyHeadingHeading2FontWeight: string;
-    TypographyHeadingHeading2LetterSpacing: number;
-    TypographyHeadingHeading2LineHeight: number;
-
-    TypographyHeadingHeading3FontSize: number;
-    TypographyHeadingHeading3FontFamily: string;
-    TypographyHeadingHeading3FontWeight: string;
-    TypographyHeadingHeading3LetterSpacing: number;
-    TypographyHeadingHeading3LineHeight: number;
-
-    TypographyHeadingHeading4FontSize: number;
-    TypographyHeadingHeading4FontFamily: string;
-    TypographyHeadingHeading4FontWeight: string;
-    TypographyHeadingHeading4LetterSpacing: number;
-    TypographyHeadingHeading4LineHeight: number;
-
-    TypographyHeadingHeading5FontSize: number;
-    TypographyHeadingHeading5FontFamily: string;
-    TypographyHeadingHeading5FontWeight: string;
-    TypographyHeadingHeading5LetterSpacing: number;
-    TypographyHeadingHeading5LineHeight: number;
-
-    TypographyParagraphParagraph1FontSize: number;
-    TypographyParagraphParagraph1FontFamily: string;
-    TypographyParagraphParagraph1FontWeight: string;
-    TypographyParagraphParagraph1LetterSpacing: number;
-    TypographyParagraphParagraph1LineHeight: number;
-
-    TypographyParagraphParagraph2FontSize: number;
-    TypographyParagraphParagraph2FontFamily: string;
-    TypographyParagraphParagraph2FontWeight: string;
-    TypographyParagraphParagraph2LetterSpacing: number;
-    TypographyParagraphParagraph2LineHeight: number;
-
-    TypographyParagraphParagraph3FontSize: number;
-    TypographyParagraphParagraph3FontFamily: string;
-    TypographyParagraphParagraph3FontWeight: string;
-    TypographyParagraphParagraph3LetterSpacing: number;
-    TypographyParagraphParagraph3LineHeight: number;
-
-    TypographyParagraphParagraph4FontSize: number;
-    TypographyParagraphParagraph4FontFamily: string;
-    TypographyParagraphParagraph4FontWeight: string;
-    TypographyParagraphParagraph4LetterSpacing: number;
-    TypographyParagraphParagraph4LineHeight: number;
-
-    TypographyParagraphParagraph5FontSize: number;
-    TypographyParagraphParagraph5FontFamily: string;
-    TypographyParagraphParagraph5FontWeight: string;
-    TypographyParagraphParagraph5LetterSpacing: number;
-    TypographyParagraphParagraph5LineHeight: number;
-
-    TypographyLabelLabel1FontSize: number;
-    TypographyLabelLabel1FontFamily: string;
-    TypographyLabelLabel1FontWeight: string;
-    TypographyLabelLabel1LetterSpacing: number;
-    TypographyLabelLabel1LineHeight: number;
-
-    TypographyLabelLabel2FontSize: number;
-    TypographyLabelLabel2FontFamily: string;
-    TypographyLabelLabel2FontWeight: string;
-    TypographyLabelLabel2LetterSpacing: number;
-    TypographyLabelLabel2LineHeight: number;
-
-    TypographyLabelLabel3FontSize: number;
-    TypographyLabelLabel3FontFamily: string;
-    TypographyLabelLabel3FontWeight: string;
-    TypographyLabelLabel3LetterSpacing: number;
-    TypographyLabelLabel3LineHeight: number;
-
-    TypographyLabelLabel4FontSize: number;
-    TypographyLabelLabel4FontFamily: string;
-    TypographyLabelLabel4FontWeight: string;
-    TypographyLabelLabel4LetterSpacing: number;
-    TypographyLabelLabel4LineHeight: number;
-
-    TypographyLabelLabel5FontSize: number;
-    TypographyLabelLabel5FontFamily: string;
-    TypographyLabelLabel5FontWeight: string;
-    TypographyLabelLabel5LetterSpacing: number;
-    TypographyLabelLabel5LineHeight: number;
+    TypographyHeadingHeading1: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyHeadingHeading2: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyHeadingHeading3: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyHeadingHeading4: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyHeadingHeading5: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyParagraphParagraph1: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyParagraphParagraph2: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyParagraphParagraph3: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyParagraphParagraph4: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyParagraphParagraph5: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyLabelLabel1: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyLabelLabel2: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyLabelLabel3: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyLabelLabel4: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
+    TypographyLabelLabel5: {
+      fontSize: number;
+      fontFamily: string;
+      letterSpacing: number;
+      lineHeight: number;
+    };
   };
 }
 
@@ -490,150 +491,138 @@ const theme: TTheme = {
     ColorAllBaseWhite: ColorAllBaseWhite,
   },
   typography: {
-    TypographyHeadingHeading1FontSize: TypographyHeadingHeading1FontSize,
-    TypographyHeadingHeading1FontFamily: TypographyHeadingHeading1FontFamily,
-    TypographyHeadingHeading1FontWeight: getFontWeight(
-      TypographyHeadingHeading1FontWeight
-    ),
-    TypographyHeadingHeading1LetterSpacing:
-      TypographyHeadingHeading1LetterSpacing,
-    TypographyHeadingHeading1LineHeight: TypographyHeadingHeading1LineHeight,
+    TypographyHeadingHeading1: {
+      fontSize: TypographyHeadingHeading1FontSize,
+      fontFamily: `${TypographyHeadingHeading1FontFamily}-${getFontWeight(
+        TypographyHeadingHeading1FontWeight
+      )}`,
+      letterSpacing: TypographyHeadingHeading1LetterSpacing,
+      lineHeight: TypographyHeadingHeading1LineHeight,
+    },
 
-    TypographyHeadingHeading2FontSize: TypographyHeadingHeading2FontSize,
-    TypographyHeadingHeading2FontFamily: TypographyHeadingHeading2FontFamily,
-    TypographyHeadingHeading2FontWeight: getFontWeight(
-      TypographyHeadingHeading2FontWeight
-    ),
-    TypographyHeadingHeading2LetterSpacing:
-      TypographyHeadingHeading2LetterSpacing,
-    TypographyHeadingHeading2LineHeight: TypographyHeadingHeading2LineHeight,
+    TypographyHeadingHeading2: {
+      fontSize: TypographyHeadingHeading2FontSize,
+      fontFamily: `${TypographyHeadingHeading2FontFamily}-${getFontWeight(
+        TypographyHeadingHeading2FontWeight
+      )}`,
+      letterSpacing: TypographyHeadingHeading2LetterSpacing,
+      lineHeight: TypographyHeadingHeading2LineHeight,
+    },
+    TypographyHeadingHeading3: {
+      fontSize: TypographyHeadingHeading3FontSize,
+      fontFamily: `${TypographyHeadingHeading3FontFamily}-${getFontWeight(
+        TypographyHeadingHeading3FontWeight
+      )}`,
+      letterSpacing: TypographyHeadingHeading3LetterSpacing,
+      lineHeight: TypographyHeadingHeading3LineHeight,
+    },
 
-    TypographyHeadingHeading3FontSize: TypographyHeadingHeading3FontSize,
-    TypographyHeadingHeading3FontFamily: TypographyHeadingHeading3FontFamily,
-    TypographyHeadingHeading3FontWeight: getFontWeight(
-      TypographyHeadingHeading3FontWeight
-    ),
-    TypographyHeadingHeading3LetterSpacing:
-      TypographyHeadingHeading3LetterSpacing,
-    TypographyHeadingHeading3LineHeight: TypographyHeadingHeading3LineHeight,
+    TypographyHeadingHeading4: {
+      fontSize: TypographyHeadingHeading4FontSize,
+      fontFamily: `${TypographyHeadingHeading4FontFamily}-${getFontWeight(
+        TypographyHeadingHeading4FontWeight
+      )}`,
+      letterSpacing: TypographyHeadingHeading4LetterSpacing,
+      lineHeight: TypographyHeadingHeading4LineHeight,
+    },
 
-    TypographyHeadingHeading4FontSize: TypographyHeadingHeading4FontSize,
-    TypographyHeadingHeading4FontFamily: TypographyHeadingHeading4FontFamily,
-    TypographyHeadingHeading4FontWeight: getFontWeight(
-      TypographyHeadingHeading4FontWeight
-    ),
-    TypographyHeadingHeading4LetterSpacing:
-      TypographyHeadingHeading4LetterSpacing,
-    TypographyHeadingHeading4LineHeight: TypographyHeadingHeading4LineHeight,
+    TypographyHeadingHeading5: {
+      fontSize: TypographyHeadingHeading5FontSize,
+      fontFamily: `${TypographyHeadingHeading5FontFamily}-${getFontWeight(
+        TypographyHeadingHeading5FontWeight
+      )}`,
+      letterSpacing: TypographyHeadingHeading5LetterSpacing,
+      lineHeight: TypographyHeadingHeading5LineHeight,
+    },
 
-    TypographyHeadingHeading5FontSize: TypographyHeadingHeading5FontSize,
-    TypographyHeadingHeading5FontFamily: TypographyHeadingHeading5FontFamily,
-    TypographyHeadingHeading5FontWeight: getFontWeight(
-      TypographyHeadingHeading5FontWeight
-    ),
-    TypographyHeadingHeading5LetterSpacing:
-      TypographyHeadingHeading5LetterSpacing,
-    TypographyHeadingHeading5LineHeight: TypographyHeadingHeading5LineHeight,
+    TypographyParagraphParagraph1: {
+      fontSize: TypographyParagraphParagraph1FontSize,
+      fontFamily: `${TypographyParagraphParagraph1FontFamily}-${getFontWeight(
+        TypographyParagraphParagraph1FontWeight
+      )}`,
+      letterSpacing: TypographyParagraphParagraph1LetterSpacing,
+      lineHeight: TypographyParagraphParagraph1LineHeight,
+    },
 
-    TypographyParagraphParagraph1FontSize:
-      TypographyParagraphParagraph1FontSize,
-    TypographyParagraphParagraph1FontFamily:
-      TypographyParagraphParagraph1FontFamily,
-    TypographyParagraphParagraph1FontWeight: getFontWeight(
-      TypographyParagraphParagraph1FontWeight
-    ),
-    TypographyParagraphParagraph1LetterSpacing:
-      TypographyParagraphParagraph1LetterSpacing,
-    TypographyParagraphParagraph1LineHeight:
-      TypographyParagraphParagraph1LineHeight,
+    TypographyParagraphParagraph2: {
+      fontSize: TypographyParagraphParagraph2FontSize,
+      fontFamily: `${TypographyParagraphParagraph2FontFamily}-${getFontWeight(
+        TypographyParagraphParagraph2FontWeight
+      )}`,
+      letterSpacing: TypographyParagraphParagraph2LetterSpacing,
+      lineHeight: TypographyParagraphParagraph2LineHeight,
+    },
+    TypographyParagraphParagraph3: {
+      fontSize: TypographyParagraphParagraph3FontSize,
+      fontFamily: `${TypographyParagraphParagraph3FontFamily}-${getFontWeight(
+        TypographyParagraphParagraph3FontWeight
+      )}`,
+      letterSpacing: TypographyParagraphParagraph3LetterSpacing,
+      lineHeight: TypographyParagraphParagraph3LineHeight,
+    },
 
-    TypographyParagraphParagraph2FontSize:
-      TypographyParagraphParagraph2FontSize,
-    TypographyParagraphParagraph2FontFamily:
-      TypographyParagraphParagraph2FontFamily,
-    TypographyParagraphParagraph2FontWeight: getFontWeight(
-      TypographyParagraphParagraph2FontWeight
-    ),
-    TypographyParagraphParagraph2LetterSpacing:
-      TypographyParagraphParagraph2LetterSpacing,
-    TypographyParagraphParagraph2LineHeight:
-      TypographyParagraphParagraph2LineHeight,
+    TypographyParagraphParagraph4: {
+      fontSize: TypographyParagraphParagraph4FontSize,
+      fontFamily: `${TypographyParagraphParagraph4FontFamily}-${getFontWeight(
+        TypographyParagraphParagraph4FontWeight
+      )}`,
+      letterSpacing: TypographyParagraphParagraph4LetterSpacing,
+      lineHeight: TypographyParagraphParagraph4LineHeight,
+    },
 
-    TypographyParagraphParagraph3FontSize:
-      TypographyParagraphParagraph3FontSize,
-    TypographyParagraphParagraph3FontFamily:
-      TypographyParagraphParagraph3FontFamily,
-    TypographyParagraphParagraph3FontWeight: getFontWeight(
-      TypographyParagraphParagraph3FontWeight
-    ),
-    TypographyParagraphParagraph3LetterSpacing:
-      TypographyParagraphParagraph3LetterSpacing,
-    TypographyParagraphParagraph3LineHeight:
-      TypographyParagraphParagraph3LineHeight,
+    TypographyParagraphParagraph5: {
+      fontSize: TypographyParagraphParagraph5FontSize,
+      fontFamily: `${TypographyParagraphParagraph5FontFamily}-${getFontWeight(
+        TypographyParagraphParagraph5FontWeight
+      )}`,
+      letterSpacing: TypographyParagraphParagraph5LetterSpacing,
+      lineHeight: TypographyParagraphParagraph5LineHeight,
+    },
 
-    TypographyParagraphParagraph4FontSize:
-      TypographyParagraphParagraph4FontSize,
-    TypographyParagraphParagraph4FontFamily:
-      TypographyParagraphParagraph4FontFamily,
-    TypographyParagraphParagraph4FontWeight: getFontWeight(
-      TypographyParagraphParagraph4FontWeight
-    ),
-    TypographyParagraphParagraph4LetterSpacing:
-      TypographyParagraphParagraph4LetterSpacing,
-    TypographyParagraphParagraph4LineHeight:
-      TypographyParagraphParagraph4LineHeight,
+    TypographyLabelLabel1: {
+      fontSize: TypographyLabelLabel1FontSize,
+      fontFamily: `${TypographyLabelLabel1FontFamily}-${getFontWeight(
+        TypographyLabelLabel1FontWeight
+      )}`,
+      letterSpacing: TypographyLabelLabel1LetterSpacing,
+      lineHeight: TypographyLabelLabel1LineHeight,
+    },
 
-    TypographyParagraphParagraph5FontSize:
-      TypographyParagraphParagraph5FontSize,
-    TypographyParagraphParagraph5FontFamily:
-      TypographyParagraphParagraph5FontFamily,
-    TypographyParagraphParagraph5FontWeight: getFontWeight(
-      TypographyParagraphParagraph5FontWeight
-    ),
-    TypographyParagraphParagraph5LetterSpacing:
-      TypographyParagraphParagraph5LetterSpacing,
-    TypographyParagraphParagraph5LineHeight:
-      TypographyParagraphParagraph5LineHeight,
+    TypographyLabelLabel2: {
+      fontSize: TypographyLabelLabel2FontSize,
+      fontFamily: `${TypographyLabelLabel2FontFamily}-${getFontWeight(
+        TypographyLabelLabel2FontWeight
+      )}`,
+      letterSpacing: TypographyLabelLabel2LetterSpacing,
+      lineHeight: TypographyLabelLabel2LineHeight,
+    },
 
-    TypographyLabelLabel1FontSize: TypographyLabelLabel1FontSize,
-    TypographyLabelLabel1FontFamily: TypographyLabelLabel1FontFamily,
-    TypographyLabelLabel1FontWeight: getFontWeight(
-      TypographyLabelLabel1FontWeight
-    ),
-    TypographyLabelLabel1LetterSpacing: TypographyLabelLabel1LetterSpacing,
-    TypographyLabelLabel1LineHeight: TypographyLabelLabel1LineHeight,
+    TypographyLabelLabel3: {
+      fontSize: TypographyLabelLabel3FontSize,
+      fontFamily: `${TypographyLabelLabel3FontFamily}-${getFontWeight(
+        TypographyLabelLabel3FontWeight
+      )}`,
+      letterSpacing: TypographyLabelLabel3LetterSpacing,
+      lineHeight: TypographyLabelLabel3LineHeight,
+    },
 
-    TypographyLabelLabel2FontSize: TypographyLabelLabel2FontSize,
-    TypographyLabelLabel2FontFamily: TypographyLabelLabel2FontFamily,
-    TypographyLabelLabel2FontWeight: getFontWeight(
-      TypographyLabelLabel2FontWeight
-    ),
-    TypographyLabelLabel2LetterSpacing: TypographyLabelLabel2LetterSpacing,
-    TypographyLabelLabel2LineHeight: TypographyLabelLabel2LineHeight,
+    TypographyLabelLabel4: {
+      fontSize: TypographyLabelLabel4FontSize,
+      fontFamily: `${TypographyLabelLabel4FontFamily}-${getFontWeight(
+        TypographyLabelLabel4FontWeight
+      )}`,
+      letterSpacing: TypographyLabelLabel4LetterSpacing,
+      lineHeight: TypographyLabelLabel4LineHeight,
+    },
 
-    TypographyLabelLabel3FontSize: TypographyLabelLabel3FontSize,
-    TypographyLabelLabel3FontFamily: TypographyLabelLabel3FontFamily,
-    TypographyLabelLabel3FontWeight: getFontWeight(
-      TypographyLabelLabel3FontWeight
-    ),
-    TypographyLabelLabel3LetterSpacing: TypographyLabelLabel3LetterSpacing,
-    TypographyLabelLabel3LineHeight: TypographyLabelLabel3LineHeight,
-
-    TypographyLabelLabel4FontSize: TypographyLabelLabel4FontSize,
-    TypographyLabelLabel4FontFamily: TypographyLabelLabel4FontFamily,
-    TypographyLabelLabel4FontWeight: getFontWeight(
-      TypographyLabelLabel4FontWeight
-    ),
-    TypographyLabelLabel4LetterSpacing: TypographyLabelLabel4LetterSpacing,
-    TypographyLabelLabel4LineHeight: TypographyLabelLabel4LineHeight,
-
-    TypographyLabelLabel5FontSize: TypographyLabelLabel5FontSize,
-    TypographyLabelLabel5FontFamily: TypographyLabelLabel5FontFamily,
-    TypographyLabelLabel5FontWeight: getFontWeight(
-      TypographyLabelLabel5FontWeight
-    ),
-    TypographyLabelLabel5LetterSpacing: TypographyLabelLabel5LetterSpacing,
-    TypographyLabelLabel5LineHeight: TypographyLabelLabel5LineHeight,
+    TypographyLabelLabel5: {
+      fontSize: TypographyLabelLabel5FontSize,
+      fontFamily: `${TypographyLabelLabel5FontFamily}-${getFontWeight(
+        TypographyLabelLabel5FontWeight
+      )}`,
+      letterSpacing: TypographyLabelLabel5LetterSpacing,
+      lineHeight: TypographyLabelLabel5LineHeight,
+    },
   },
 };
 
