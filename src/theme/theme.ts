@@ -175,7 +175,7 @@ import {
 } from './designTokens';
 
 interface TTheme {
-  dark: boolean;
+  isDark: boolean;
   roundness: number;
   colors: {
     ColorAllPrimaryPrimary900: string;
@@ -383,7 +383,7 @@ interface TTheme {
 }
 
 const theme: TTheme = {
-  dark: false,
+  isDark: false,
   roundness: 10,
   colors: {
     ColorBaseGrayLight: ColorBaseGrayLight,
