@@ -1,11 +1,14 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { ThemeProvider } from 'matrix';
-import * as React from 'react';
-import GetStarted from './screens/GetStarted';
+import React from 'react';
+import Navigator from './navigation/Navigator';
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <ThemeProvider>
-      <GetStarted />
+      <NavigationContainer>
+        <Navigator initialScreen={'HeaderDemo'} />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
