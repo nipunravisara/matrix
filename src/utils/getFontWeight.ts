@@ -33,27 +33,27 @@ export const getFontVariation = (
     switch (fontWeight) {
       case 700:
         return {
-          fontFamily: fontFamily,
+          fontFamily: `${fontFamily}-Bold`,
           fontWeight: '700',
         };
       case 600:
         return {
-          fontFamily: fontFamily,
+          fontFamily: `${fontFamily}-SemiBold`,
           fontWeight: '600',
         };
       case 500:
         return {
-          fontFamily: fontFamily,
+          fontFamily: `${fontFamily}-Medium`,
           fontWeight: '500',
         };
       case 300:
         return {
-          fontFamily: fontFamily,
+          fontFamily: `${fontFamily}-Light`,
           fontWeight: '300',
         };
       default:
         return {
-          fontFamily: fontFamily,
+          fontFamily: `${fontFamily}-Regular`,
           fontWeight: '300',
         };
     }
