@@ -17,7 +17,7 @@ const ThemeProvider = (props: TThemeProvider) => {
   const appTheme: TTheme = {
     ...defaultTheme,
     ...theme,
-    dark: isDark,
+    isDark,
   };
 
   return (
