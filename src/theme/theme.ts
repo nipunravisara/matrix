@@ -1,4 +1,6 @@
-import { getFontWeight } from '../utils/getFontWeight';
+import type { TextStyle } from 'react-native';
+import { getFontVariation } from '../utils/getFontWeight';
+
 import {
   ColorAllBaseBlack,
   ColorAllBaseWhite,
@@ -289,96 +291,21 @@ interface TTheme {
     ColorAllBaseWhite: string;
   };
   typography: {
-    TypographyHeadingHeading1: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyHeadingHeading2: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyHeadingHeading3: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyHeadingHeading4: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyHeadingHeading5: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyParagraphParagraph1: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyParagraphParagraph2: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyParagraphParagraph3: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyParagraphParagraph4: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyParagraphParagraph5: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyLabelLabel1: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyLabelLabel2: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyLabelLabel3: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyLabelLabel4: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
-    TypographyLabelLabel5: {
-      fontSize: number;
-      fontFamily: string;
-      letterSpacing: number;
-      lineHeight: number;
-    };
+    TypographyHeadingHeading1: TextStyle;
+    TypographyHeadingHeading2: TextStyle;
+    TypographyHeadingHeading3: TextStyle;
+    TypographyHeadingHeading4: TextStyle;
+    TypographyHeadingHeading5: TextStyle;
+    TypographyParagraphParagraph1: TextStyle;
+    TypographyParagraphParagraph2: TextStyle;
+    TypographyParagraphParagraph3: TextStyle;
+    TypographyParagraphParagraph4: TextStyle;
+    TypographyParagraphParagraph5: TextStyle;
+    TypographyLabelLabel1: TextStyle;
+    TypographyLabelLabel2: TextStyle;
+    TypographyLabelLabel3: TextStyle;
+    TypographyLabelLabel4: TextStyle;
+    TypographyLabelLabel5: TextStyle;
   };
 }
 
@@ -490,138 +417,287 @@ const theme: TTheme = {
     ColorAllBaseBlack: ColorAllBaseBlack,
     ColorAllBaseWhite: ColorAllBaseWhite,
   },
+  // typography: {
+  //   TypographyHeadingHeading1: {
+  //     fontSize: TypographyHeadingHeading1FontSize,
+  //     fontFamily: `${TypographyHeadingHeading1FontFamily}-${getFontWeight(
+  //       TypographyHeadingHeading1FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyHeadingHeading1LetterSpacing,
+  //     lineHeight: TypographyHeadingHeading1LineHeight,
+  //   },
+
+  //   TypographyHeadingHeading2: {
+  //     fontSize: TypographyHeadingHeading2FontSize,
+  //     fontFamily: `${TypographyHeadingHeading2FontFamily}-${getFontWeight(
+  //       TypographyHeadingHeading2FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyHeadingHeading2LetterSpacing,
+  //     lineHeight: TypographyHeadingHeading2LineHeight,
+  //   },
+  //   TypographyHeadingHeading3: {
+  //     fontSize: TypographyHeadingHeading3FontSize,
+  //     fontFamily: `${TypographyHeadingHeading3FontFamily}-${getFontWeight(
+  //       TypographyHeadingHeading3FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyHeadingHeading3LetterSpacing,
+  //     lineHeight: TypographyHeadingHeading3LineHeight,
+  //   },
+
+  //   TypographyHeadingHeading4: {
+  //     fontSize: TypographyHeadingHeading4FontSize,
+  //     fontFamily: `${TypographyHeadingHeading4FontFamily}-${getFontWeight(
+  //       TypographyHeadingHeading4FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyHeadingHeading4LetterSpacing,
+  //     lineHeight: TypographyHeadingHeading4LineHeight,
+  //   },
+
+  //   TypographyHeadingHeading5: {
+  //     fontSize: TypographyHeadingHeading5FontSize,
+  //     fontFamily: `${TypographyHeadingHeading5FontFamily}-${getFontWeight(
+  //       TypographyHeadingHeading5FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyHeadingHeading5LetterSpacing,
+  //     lineHeight: TypographyHeadingHeading5LineHeight,
+  //   },
+
+  //   TypographyParagraphParagraph1: {
+  //     fontSize: TypographyParagraphParagraph1FontSize,
+  //     fontFamily: `${TypographyParagraphParagraph1FontFamily}-${getFontWeight(
+  //       TypographyParagraphParagraph1FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyParagraphParagraph1LetterSpacing,
+  //     lineHeight: TypographyParagraphParagraph1LineHeight,
+  //   },
+
+  //   TypographyParagraphParagraph2: {
+  //     fontSize: TypographyParagraphParagraph2FontSize,
+  //     fontFamily: `${TypographyParagraphParagraph2FontFamily}-${getFontWeight(
+  //       TypographyParagraphParagraph2FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyParagraphParagraph2LetterSpacing,
+  //     lineHeight: TypographyParagraphParagraph2LineHeight,
+  //   },
+  //   TypographyParagraphParagraph3: {
+  //     fontSize: TypographyParagraphParagraph3FontSize,
+  //     fontFamily: `${TypographyParagraphParagraph3FontFamily}-${getFontWeight(
+  //       TypographyParagraphParagraph3FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyParagraphParagraph3LetterSpacing,
+  //     lineHeight: TypographyParagraphParagraph3LineHeight,
+  //   },
+
+  //   TypographyParagraphParagraph4: {
+  //     fontSize: TypographyParagraphParagraph4FontSize,
+  //     fontFamily: `${TypographyParagraphParagraph4FontFamily}-${getFontWeight(
+  //       TypographyParagraphParagraph4FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyParagraphParagraph4LetterSpacing,
+  //     lineHeight: TypographyParagraphParagraph4LineHeight,
+  //   },
+
+  //   TypographyParagraphParagraph5: {
+  //     fontSize: TypographyParagraphParagraph5FontSize,
+  //     fontFamily: `${TypographyParagraphParagraph5FontFamily}-${getFontWeight(
+  //       TypographyParagraphParagraph5FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyParagraphParagraph5LetterSpacing,
+  //     lineHeight: TypographyParagraphParagraph5LineHeight,
+  //   },
+
+  //   TypographyLabelLabel1: {
+  //     fontSize: TypographyLabelLabel1FontSize,
+  //     fontFamily: `${TypographyLabelLabel1FontFamily}-${getFontWeight(
+  //       TypographyLabelLabel1FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyLabelLabel1LetterSpacing,
+  //     lineHeight: TypographyLabelLabel1LineHeight,
+  //   },
+
+  //   TypographyLabelLabel2: {
+  //     fontSize: TypographyLabelLabel2FontSize,
+  //     fontFamily: `${TypographyLabelLabel2FontFamily}-${getFontWeight(
+  //       TypographyLabelLabel2FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyLabelLabel2LetterSpacing,
+  //     lineHeight: TypographyLabelLabel2LineHeight,
+  //   },
+
+  //   TypographyLabelLabel3: {
+  //     fontSize: TypographyLabelLabel3FontSize,
+  //     fontFamily: `${TypographyLabelLabel3FontFamily}-${getFontWeight(
+  //       TypographyLabelLabel3FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyLabelLabel3LetterSpacing,
+  //     lineHeight: TypographyLabelLabel3LineHeight,
+  //   },
+
+  //   TypographyLabelLabel4: {
+  //     fontSize: TypographyLabelLabel4FontSize,
+  //     fontFamily: `${TypographyLabelLabel4FontFamily}-${getFontWeight(
+  //       TypographyLabelLabel4FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyLabelLabel4LetterSpacing,
+  //     lineHeight: TypographyLabelLabel4LineHeight,
+  //   },
+
+  //   TypographyLabelLabel5: {
+  //     fontSize: TypographyLabelLabel5FontSize,
+  //     fontFamily: `${TypographyLabelLabel5FontFamily}-${getFontWeight(
+  //       TypographyLabelLabel5FontWeight
+  //     )}`,
+  //     letterSpacing: TypographyLabelLabel5LetterSpacing,
+  //     lineHeight: TypographyLabelLabel5LineHeight,
+  //   },
+  // },
   typography: {
     TypographyHeadingHeading1: {
       fontSize: TypographyHeadingHeading1FontSize,
-      fontFamily: `${TypographyHeadingHeading1FontFamily}-${getFontWeight(
-        TypographyHeadingHeading1FontWeight
-      )}`,
       letterSpacing: TypographyHeadingHeading1LetterSpacing,
       lineHeight: TypographyHeadingHeading1LineHeight,
+      ...getFontVariation(
+        TypographyHeadingHeading1FontFamily,
+        TypographyHeadingHeading1FontWeight
+      ),
     },
 
     TypographyHeadingHeading2: {
       fontSize: TypographyHeadingHeading2FontSize,
-      fontFamily: `${TypographyHeadingHeading2FontFamily}-${getFontWeight(
-        TypographyHeadingHeading2FontWeight
-      )}`,
       letterSpacing: TypographyHeadingHeading2LetterSpacing,
       lineHeight: TypographyHeadingHeading2LineHeight,
+      ...getFontVariation(
+        TypographyHeadingHeading2FontFamily,
+        TypographyHeadingHeading2FontWeight
+      ),
     },
     TypographyHeadingHeading3: {
       fontSize: TypographyHeadingHeading3FontSize,
-      fontFamily: `${TypographyHeadingHeading3FontFamily}-${getFontWeight(
-        TypographyHeadingHeading3FontWeight
-      )}`,
       letterSpacing: TypographyHeadingHeading3LetterSpacing,
       lineHeight: TypographyHeadingHeading3LineHeight,
+      ...getFontVariation(
+        TypographyHeadingHeading3FontFamily,
+        TypographyHeadingHeading3FontWeight
+      ),
     },
 
     TypographyHeadingHeading4: {
       fontSize: TypographyHeadingHeading4FontSize,
-      fontFamily: `${TypographyHeadingHeading4FontFamily}-${getFontWeight(
-        TypographyHeadingHeading4FontWeight
-      )}`,
       letterSpacing: TypographyHeadingHeading4LetterSpacing,
       lineHeight: TypographyHeadingHeading4LineHeight,
+      ...getFontVariation(
+        TypographyHeadingHeading4FontFamily,
+        TypographyHeadingHeading4FontWeight
+      ),
     },
 
     TypographyHeadingHeading5: {
       fontSize: TypographyHeadingHeading5FontSize,
-      fontFamily: `${TypographyHeadingHeading5FontFamily}-${getFontWeight(
-        TypographyHeadingHeading5FontWeight
-      )}`,
       letterSpacing: TypographyHeadingHeading5LetterSpacing,
       lineHeight: TypographyHeadingHeading5LineHeight,
+      ...getFontVariation(
+        TypographyHeadingHeading5FontFamily,
+        TypographyHeadingHeading5FontWeight
+      ),
     },
 
     TypographyParagraphParagraph1: {
       fontSize: TypographyParagraphParagraph1FontSize,
-      fontFamily: `${TypographyParagraphParagraph1FontFamily}-${getFontWeight(
-        TypographyParagraphParagraph1FontWeight
-      )}`,
       letterSpacing: TypographyParagraphParagraph1LetterSpacing,
       lineHeight: TypographyParagraphParagraph1LineHeight,
+      ...getFontVariation(
+        TypographyParagraphParagraph1FontFamily,
+        TypographyParagraphParagraph1FontWeight
+      ),
     },
 
     TypographyParagraphParagraph2: {
       fontSize: TypographyParagraphParagraph2FontSize,
-      fontFamily: `${TypographyParagraphParagraph2FontFamily}-${getFontWeight(
-        TypographyParagraphParagraph2FontWeight
-      )}`,
       letterSpacing: TypographyParagraphParagraph2LetterSpacing,
       lineHeight: TypographyParagraphParagraph2LineHeight,
+      ...getFontVariation(
+        TypographyParagraphParagraph2FontFamily,
+        TypographyParagraphParagraph2FontWeight
+      ),
     },
     TypographyParagraphParagraph3: {
       fontSize: TypographyParagraphParagraph3FontSize,
-      fontFamily: `${TypographyParagraphParagraph3FontFamily}-${getFontWeight(
-        TypographyParagraphParagraph3FontWeight
-      )}`,
       letterSpacing: TypographyParagraphParagraph3LetterSpacing,
       lineHeight: TypographyParagraphParagraph3LineHeight,
+      ...getFontVariation(
+        TypographyParagraphParagraph3FontFamily,
+        TypographyParagraphParagraph3FontWeight
+      ),
     },
 
     TypographyParagraphParagraph4: {
       fontSize: TypographyParagraphParagraph4FontSize,
-      fontFamily: `${TypographyParagraphParagraph4FontFamily}-${getFontWeight(
-        TypographyParagraphParagraph4FontWeight
-      )}`,
       letterSpacing: TypographyParagraphParagraph4LetterSpacing,
       lineHeight: TypographyParagraphParagraph4LineHeight,
+      ...getFontVariation(
+        TypographyParagraphParagraph4FontFamily,
+        TypographyParagraphParagraph4FontWeight
+      ),
     },
 
     TypographyParagraphParagraph5: {
       fontSize: TypographyParagraphParagraph5FontSize,
-      fontFamily: `${TypographyParagraphParagraph5FontFamily}-${getFontWeight(
-        TypographyParagraphParagraph5FontWeight
-      )}`,
       letterSpacing: TypographyParagraphParagraph5LetterSpacing,
       lineHeight: TypographyParagraphParagraph5LineHeight,
+      ...getFontVariation(
+        TypographyParagraphParagraph5FontFamily,
+        TypographyParagraphParagraph5FontWeight
+      ),
     },
 
     TypographyLabelLabel1: {
       fontSize: TypographyLabelLabel1FontSize,
-      fontFamily: `${TypographyLabelLabel1FontFamily}-${getFontWeight(
-        TypographyLabelLabel1FontWeight
-      )}`,
       letterSpacing: TypographyLabelLabel1LetterSpacing,
       lineHeight: TypographyLabelLabel1LineHeight,
+      ...getFontVariation(
+        TypographyLabelLabel1FontFamily,
+        TypographyLabelLabel1FontWeight
+      ),
     },
 
     TypographyLabelLabel2: {
       fontSize: TypographyLabelLabel2FontSize,
-      fontFamily: `${TypographyLabelLabel2FontFamily}-${getFontWeight(
-        TypographyLabelLabel2FontWeight
-      )}`,
       letterSpacing: TypographyLabelLabel2LetterSpacing,
       lineHeight: TypographyLabelLabel2LineHeight,
+      ...getFontVariation(
+        TypographyLabelLabel2FontFamily,
+        TypographyLabelLabel2FontWeight
+      ),
     },
 
     TypographyLabelLabel3: {
       fontSize: TypographyLabelLabel3FontSize,
-      fontFamily: `${TypographyLabelLabel3FontFamily}-${getFontWeight(
-        TypographyLabelLabel3FontWeight
-      )}`,
       letterSpacing: TypographyLabelLabel3LetterSpacing,
       lineHeight: TypographyLabelLabel3LineHeight,
+      ...getFontVariation(
+        TypographyLabelLabel3FontFamily,
+        TypographyLabelLabel3FontWeight
+      ),
     },
 
     TypographyLabelLabel4: {
       fontSize: TypographyLabelLabel4FontSize,
-      fontFamily: `${TypographyLabelLabel4FontFamily}-${getFontWeight(
-        TypographyLabelLabel4FontWeight
-      )}`,
       letterSpacing: TypographyLabelLabel4LetterSpacing,
       lineHeight: TypographyLabelLabel4LineHeight,
+      ...getFontVariation(
+        TypographyLabelLabel4FontFamily,
+        TypographyLabelLabel4FontWeight
+      ),
     },
 
     TypographyLabelLabel5: {
       fontSize: TypographyLabelLabel5FontSize,
-      fontFamily: `${TypographyLabelLabel5FontFamily}-${getFontWeight(
-        TypographyLabelLabel5FontWeight
-      )}`,
       letterSpacing: TypographyLabelLabel5LetterSpacing,
       lineHeight: TypographyLabelLabel5LineHeight,
+      ...getFontVariation(
+        TypographyLabelLabel5FontFamily,
+        TypographyLabelLabel5FontWeight
+      ),
     },
   },
 };
