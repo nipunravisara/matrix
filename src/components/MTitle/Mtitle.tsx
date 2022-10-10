@@ -1,22 +1,22 @@
 import React from 'react';
 import { Text, TextStyle } from 'react-native';
-import getTextStyles from './getTextStyles';
+import getTextStyles from './getTitleStyles';
 
-export enum MTextVariant {
-  p1,
-  p2,
-  p3,
-  p4,
-  p5,
+export enum MTitleVariant {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
 }
 
-export interface TMText {
-  type?: MTextVariant;
+export interface TMtitle {
+  type?: MTitleVariant;
   content: string;
   styles?: TextStyle;
 }
 
-export default function MText(props: TMText): JSX.Element {
+export default function Mtitle(props: TMtitle) {
   const { type, content, styles } = props;
 
   return <Text style={[getTextStyles(type), styles]}>{content}</Text>;
