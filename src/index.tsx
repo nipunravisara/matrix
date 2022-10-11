@@ -9,6 +9,7 @@ import { getFontVariation } from './utils/getFontWeight';
 // components
 import MText, { MTextVariant, TMText } from './components/MText/MText';
 import MTitle, { MTitleVariant, TMtitle } from './components/MTitle/Mtitle';
+import MIcon, { TMIcon } from './components/MIcon/MIcon';
 
 export { ThemeProvider, useTheme };
 export type { TThemeProvider, TTheme };
@@ -19,3 +20,5 @@ export { MText, MTextVariant };
 export type { TMText };
 export { MTitle, MTitleVariant };
 export type { TMtitle };
+export { MIcon };
+export type { TMIcon };

@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import GetStarted from '../screens/GetStarted';
 import TextShowcase from '../screens/showcase/TextShowcase';
 import TitleShowcase from '../screens/showcase/TitleShowcase';
+import IconShowcase from '../screens/showcase/IconShowcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -14,7 +15,7 @@ export type RootStackParamList = {
   Showcase: undefined;
   TextShowcase: undefined;
   TitleShowcase: undefined;
-  ButtonDemo: undefined;
+  IconShowcase: undefined;
   IconDemo: undefined;
 };
 
@@ -33,6 +34,7 @@ export default function Navigator({
       <Stack.Screen name="GetStarted" component={GetStarted} />
       <Stack.Screen name="TextShowcase" component={TextShowcase} />
       <Stack.Screen name="TitleShowcase" component={TitleShowcase} />
+      <Stack.Screen name="IconShowcase" component={IconShowcase} />
     </Stack.Navigator>
   );
 }
