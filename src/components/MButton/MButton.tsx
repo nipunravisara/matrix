@@ -28,7 +28,7 @@ export default function MButton(props: TMButton) {
   return (
     <TouchableHighlight
       disabled={disabled}
-      underlayColor={MButtonStyles(props).containerPressed['color']}
+      underlayColor={MButtonStyles(props).containerPressed.color}
       style={[MButtonStyles(props).container, styles]}
       onPress={onPress}
       onPressIn={() => setPressed(true)}
