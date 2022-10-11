@@ -1,9 +1,9 @@
 import type { ColorValue, TextStyle } from 'react-native';
 import useTheme from '../../theme/useTheme';
-import { MTextVariant } from './MText';
+import { MTitleVariant } from './Mtitle';
 
 export default function getTextStyles(
-  type: MTextVariant | undefined
+  type: MTitleVariant | undefined
 ): TextStyle {
   const { isDark, colors, typography } = useTheme();
 
@@ -14,40 +14,40 @@ export default function getTextStyles(
   };
 
   switch (type) {
-    case MTextVariant.p1:
+    case MTitleVariant.h1:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph1,
+        ...typography.TypographyHeadingHeading1,
       };
       break;
-    case MTextVariant.p2:
+    case MTitleVariant.h2:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph2,
+        ...typography.TypographyHeadingHeading2,
       };
       break;
-    case MTextVariant.p3:
+    case MTitleVariant.h3:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph3,
+        ...typography.TypographyHeadingHeading3,
       };
       break;
-    case MTextVariant.p4:
+    case MTitleVariant.h4:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph4,
+        ...typography.TypographyHeadingHeading4,
       };
       break;
-    case MTextVariant.p5:
+    case MTitleVariant.h5:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph5,
+        ...typography.TypographyHeadingHeading5,
       };
       break;
     default:
       textStyles = {
         ...textStyles,
-        ...typography.TypographyParagraphParagraph2,
+        ...typography.TypographyHeadingHeading3,
       };
       break;
   }
