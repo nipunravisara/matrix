@@ -11,6 +11,7 @@ import MText, { MTextVariant, TMText } from './components/MText/MText';
 import MTitle, { MTitleVariant, TMtitle } from './components/MTitle/Mtitle';
 import MIcon, { TMIcon } from './components/MIcon/MIcon';
 import MLabel, { TMLabel, MLabelVariations } from './components/MLabel/MLabel';
+import MButton, { TMButton } from './components/MButton/MButton';
 
 export { ThemeProvider, useTheme };
 export type { TThemeProvider, TTheme };
@@ -25,3 +26,5 @@ export { MIcon };
 export type { TMIcon };
 export { MLabel, MLabelVariations };
 export type { TMLabel };
+export { MButton };
+export type { TMButton };
