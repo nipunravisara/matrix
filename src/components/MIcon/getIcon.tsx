@@ -1,10 +1,10 @@
 import React from 'react';
-import { ArrowExpand } from '../../assets/icons';
+import {ArrowExpand} from '../../assets/icons';
 import ChevronLeft from '../../assets/icons/ChevronLeft';
 import useTheme from '../../theme/useTheme';
 
 function getIconColor(color: string | undefined): string {
-  const { isDark } = useTheme();
+  const {isDark} = useTheme();
 
   if (color) {
     return color;

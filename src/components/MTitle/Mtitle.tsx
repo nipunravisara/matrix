@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextStyle } from 'react-native';
+import {Text, TextStyle} from 'react-native';
 import getTextStyles from './getTitleStyles';
 
 export enum MTitleVariant {
@@ -17,7 +17,7 @@ export interface TMtitle {
 }
 
 export default function Mtitle(props: TMtitle) {
-  const { type, content, styles } = props;
+  const {type, content, styles} = props;
 
   return <Text style={[getTextStyles(type), styles]}>{content}</Text>;
 }

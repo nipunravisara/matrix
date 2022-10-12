@@ -1,5 +1,5 @@
-import type { TextStyle } from 'react-native';
-import { getFontVariation } from '../utils/getFontWeight';
+import type {TextStyle} from 'react-native';
+import {getFontVariation} from '../utils/getFontWeight';
 
 import {
   ColorAllBaseBlack,
@@ -702,5 +702,5 @@ const theme: TTheme = {
   },
 };
 
-export { theme };
-export type { TTheme };
+export {theme};
+export type {TTheme};

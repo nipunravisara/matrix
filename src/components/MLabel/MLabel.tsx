@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextStyle } from 'react-native';
+import {Text, TextStyle} from 'react-native';
 import getLabelStyles from './getLabelStyles';
 
 export enum MLabelVariations {
@@ -17,7 +17,7 @@ export interface TMLabel {
 }
 
 export default function MLabel(props: TMLabel) {
-  const { content, type, styles } = props;
+  const {content, type, styles} = props;
 
   return <Text style={[getLabelStyles(type), styles]}>{content}</Text>;
 }
