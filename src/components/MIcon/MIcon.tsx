@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, ViewStyle} from 'react-native';
-import {GetIcon} from './GetIcon';
+import {GetIcon} from './getIcon';
 
 export interface TMIcon {
   name: string;
