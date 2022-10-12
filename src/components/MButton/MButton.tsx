@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { TouchableHighlight, ViewStyle } from 'react-native';
+import React, {useState} from 'react';
+import {TouchableHighlight, ViewStyle} from 'react-native';
 import MLabel from '../MLabel/MLabel';
-import { MButtonStyles } from './getButtonStyles';
+import {MButtonStyles} from './getButtonStyles';
 
 export enum MButtonVariations {
   primary,

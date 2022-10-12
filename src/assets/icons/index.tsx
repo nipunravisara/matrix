@@ -1,3 +1,3 @@
 import ArrowExpand from './ArrowExpand';
 
-export { ArrowExpand };
+export {ArrowExpand};

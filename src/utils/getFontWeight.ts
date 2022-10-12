@@ -1,4 +1,4 @@
-import { Platform, TextStyle } from 'react-native';
+import {Platform, TextStyle} from 'react-native';
 
 export const getFontVariation = (
   fontFamily: string,

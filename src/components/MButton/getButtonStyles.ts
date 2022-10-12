@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
-import type { TTheme } from '../../theme/theme';
+import {StyleSheet} from 'react-native';
+import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
-import { MButtonVariations, TMButton } from './MButton';
+import {MButtonVariations, TMButton} from './MButton';
 
 function getButtonColor(
   colors: Pick<TTheme, 'colors'>,
@@ -77,8 +77,8 @@ function getButtonLabelPressedColor(
   }
 }
 
-export const MButtonStyles = ({ type, disabled = false }: TMButton) => {
-  const { colors, roundness } = useTheme();
+export const MButtonStyles = ({type, disabled = false}: TMButton) => {
+  const {colors, roundness} = useTheme();
 
   return StyleSheet.create({
     container: {
@@ -88,27 +88,24 @@ export const MButtonStyles = ({ type, disabled = false }: TMButton) => {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: getButtonColor(
-        { colors },
+        {colors},
         type || MButtonVariations.primary,
         disabled
       ),
     },
     containerPressed: {
-      color: getButtonPressedColor(
-        { colors },
-        type || MButtonVariations.primary
-      ),
+      color: getButtonPressedColor({colors}, type || MButtonVariations.primary),
     },
     label: {
       color: getButtonLabelColor(
-        { colors },
+        {colors},
         type || MButtonVariations.primary,
         disabled
       ),
     },
     labelPressed: {
       color: getButtonLabelPressedColor(
-        { colors },
+        {colors},
         type || MButtonVariations.primary
       ),
     },

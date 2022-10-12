@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, TextStyle } from 'react-native';
+import {Text, TextStyle} from 'react-native';
+import useTheme from '../../theme/useTheme';
 import getTextStyles from './getTextStyles';
 
 export enum MTextVariant {
@@ -17,7 +18,8 @@ export interface TMText {
 }
 
 export default function MText(props: TMText): JSX.Element {
-  const { type, content, styles } = props;
+  const theme = useTheme();
+  const {type, content, styles} = props;
 
-  return <Text style={[getTextStyles(type), styles]}>{content}</Text>;
+  return <Text style={[getTextStyles(type, theme), styles]}>{content}</Text>;
 }
