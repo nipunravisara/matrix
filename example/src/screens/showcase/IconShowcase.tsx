@@ -1,6 +1,6 @@
 import React from 'react';
-import { FlatList, SafeAreaView, TouchableOpacity, View } from 'react-native';
-import { MIcon, MText } from 'matrix';
+import {FlatList, SafeAreaView, TouchableOpacity, View} from 'react-native';
+import {MIcon, MText} from 'matrix';
 
 interface TIcons {
   name: string;
@@ -18,13 +18,13 @@ const icons: TIcons[] = [
   },
 ];
 
-const RenderItem = ({ item }: { item: TIcons }) => {
+const RenderItem = ({item}: {item: TIcons}) => {
   return (
     <TouchableOpacity
-      style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 10 }}
+      style={{flexDirection: 'row', alignItems: 'center', marginVertical: 10}}
     >
-      <MIcon name={item.name} styles={{ padding: 5 }} />
-      <View style={{ marginLeft: 20 }}>
+      <MIcon name={item.name} styles={{padding: 5}} />
+      <View style={{marginLeft: 20}}>
         <MText content={item.title} />
       </View>
     </TouchableOpacity>
@@ -34,7 +34,7 @@ const RenderItem = ({ item }: { item: TIcons }) => {
 export default function IconShowcase() {
   return (
     <SafeAreaView>
-      <View style={{ paddingHorizontal: 20 }}>
+      <View style={{paddingHorizontal: 20}}>
         <FlatList<TIcons> data={icons} renderItem={RenderItem} />
       </View>
     </SafeAreaView>

@@ -15,6 +15,7 @@ import MButton, {
   TMButton,
   MButtonVariations,
 } from './components/MButton/MButton';
+import MHeader, {TMHeader} from './components/MHeader/MHeader';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
@@ -31,3 +32,5 @@ export {MLabel, MLabelVariations};
 export type {TMLabel};
 export {MButton, MButtonVariations};
 export type {TMButton};
+export {MHeader};
+export type {TMHeader};
