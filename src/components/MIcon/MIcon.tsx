@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, ViewStyle} from 'react-native';
-import getIcon from './getIcon';
+import {GetIcon} from './GetIcon';
 
 export interface TMIcon {
   name: string;
@@ -14,7 +14,7 @@ export default function MIcon(props: TMIcon) {
 
   return (
     <View style={[{alignSelf: 'flex-start'}, styles]}>
-      {getIcon(name, color)}
+      {GetIcon({name, color})}
     </View>
   );
 }

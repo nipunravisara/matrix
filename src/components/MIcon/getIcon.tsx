@@ -1,11 +1,18 @@
 import React from 'react';
 import {ArrowExpand} from '../../assets/icons';
 import ChevronLeft from '../../assets/icons/ChevronLeft';
+import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 
-function getIconColor(color: string | undefined): string {
-  const {isDark} = useTheme();
+interface TGetIcon {
+  name: string;
+  color?: string;
+}
 
+function getIconColor(
+  color: string | undefined,
+  isDark: Pick<TTheme, 'isDark'>['isDark']
+): string {
   if (color) {
     return color;
   } else if (isDark) {
@@ -14,13 +21,16 @@ function getIconColor(color: string | undefined): string {
   return '#000';
 }
 
-export default function getIcon(iconName: string, color?: string): JSX.Element {
-  switch (iconName) {
+export const GetIcon = (props: TGetIcon): JSX.Element => {
+  const {isDark} = useTheme();
+  const {name, color} = props;
+
+  switch (name) {
     case 'arrowExpand':
-      return <ArrowExpand color={getIconColor(color)} />;
+      return <ArrowExpand color={getIconColor(color, isDark)} />;
     case 'chevronLeft':
-      return <ChevronLeft color={getIconColor(color)} />;
+      return <ChevronLeft color={getIconColor(color, isDark)} />;
     default:
-      return <ArrowExpand color={getIconColor(color)} />;
+      return <ArrowExpand color={getIconColor(color, isDark)} />;
   }
-}
+};

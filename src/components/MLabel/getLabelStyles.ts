@@ -1,11 +1,12 @@
 import type {ColorValue, TextStyle} from 'react-native';
-import useTheme from '../../theme/useTheme';
+import type {TTheme} from '../../theme/theme';
 import {MLabelVariations} from './MLabel';
 
 export default function getLabelStyles(
-  type: MLabelVariations | undefined
+  type: MLabelVariations | undefined,
+  theme: TTheme
 ): TextStyle {
-  const {isDark, colors, typography} = useTheme();
+  const {isDark, colors, typography} = theme;
 
   let textStyles = {
     color: isDark

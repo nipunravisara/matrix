@@ -1,11 +1,12 @@
 import type {ColorValue, TextStyle} from 'react-native';
-import useTheme from '../../theme/useTheme';
+import type {TTheme} from '../../theme/theme';
 import {MTextVariant} from './MText';
 
 export default function getTextStyles(
-  type: MTextVariant | undefined
+  type: MTextVariant | undefined,
+  theme: TTheme
 ): TextStyle {
-  const {isDark, colors, typography} = useTheme();
+  const {isDark, colors, typography} = theme;
 
   let textStyles = {
     color: isDark

@@ -24,8 +24,8 @@
   "scripts": {
     "test": "jest",
     "typescript": "tsc --noEmit",
-    "lint": "npx eslint --ext .tsx --ext .ts src/",
-    "format": "npx prettier --check ./src",
+    "lint": "eslint --ext .tsx --ext .ts src/",
+    "format": "prettier --check ./src",
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
