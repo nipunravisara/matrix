@@ -77,13 +77,20 @@ function getButtonLabelPressedColor(
   }
 }
 
-export const MButtonStyles = ({type, disabled = false}: TMButton) => {
+export const MButtonStyles = ({
+  expanded,
+  prefix,
+  type,
+  disabled = false,
+}: TMButton) => {
   const {colors, roundness} = useTheme();
 
   return StyleSheet.create({
     container: {
       height: 48,
-      padding: 10,
+      paddingVertical: 10,
+      paddingHorizontal: 15,
+      alignSelf: expanded ? 'stretch' : 'flex-start',
       borderRadius: roundness,
       alignItems: 'center',
       justifyContent: 'center',
@@ -95,6 +102,9 @@ export const MButtonStyles = ({type, disabled = false}: TMButton) => {
     },
     containerPressed: {
       color: getButtonPressedColor({colors}, type || MButtonVariations.primary),
+    },
+    innerContainer: {
+      flexDirection: 'row',
     },
     label: {
       color: getButtonLabelColor(

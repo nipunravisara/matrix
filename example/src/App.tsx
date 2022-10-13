@@ -12,9 +12,9 @@ export default function App(): JSX.Element {
         <StatusBar
           translucent
           backgroundColor="transparent"
-          barStyle="light-content"
+          barStyle={theme.isDark ? 'light-content' : 'dark-content'}
         />
-        <Navigator initialScreen={'Showcase'} />
+        <Navigator initialScreen={'ButtonShowcase'} />
       </NavigationContainer>
     </ThemeProvider>
   );
