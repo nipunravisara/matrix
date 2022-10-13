@@ -8,7 +8,11 @@ export default function ButtonShowcase() {
       <MTitle type={MTitleVariant.h5} content="Resting state" />
       <View>
         <Text style={{marginVertical: 20}}>Button primary</Text>
-        <MButton title="Button" type={MButtonVariations.primary} />
+        <MButton
+          title="Button"
+          type={MButtonVariations.primary}
+          prefix="arrowLeft"
+        />
       </View>
       <View>
         <Text style={{marginVertical: 20}}>Button secondary</Text>
