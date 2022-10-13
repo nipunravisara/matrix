@@ -30,7 +30,7 @@ export const MHeaderStyles = ({
       alignItems: 'center',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      borderBottomWidth: 0.5,
+      borderBottomWidth: bottomLine ? 0.5 : 0,
       backgroundColor: colors.ColorSurfacePrimary,
       borderBottomColor: bottomLine
         ? colors.ColorBorderBorderPrimary

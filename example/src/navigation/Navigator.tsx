@@ -8,6 +8,7 @@ import IconShowcase from '../screens/showcase/IconShowcase';
 import ButtonShowcase from '../screens/showcase/ButtonShowcase';
 import LabelShowcase from '../screens/showcase/LabelShowcase';
 import HeaderShowcase from '../screens/showcase/HeaderShowcase';
+import Showcase from '../screens/showcase/Showcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -37,6 +38,7 @@ export default function Navigator({
       initialRouteName={initialScreen}
     >
       <Stack.Screen name="GetStarted" component={GetStarted} />
+      <Stack.Screen name="Showcase" component={Showcase} />
       <Stack.Screen name="TextShowcase" component={TextShowcase} />
       <Stack.Screen name="TitleShowcase" component={TitleShowcase} />
       <Stack.Screen name="IconShowcase" component={IconShowcase} />
