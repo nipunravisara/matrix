@@ -10,7 +10,7 @@ interface TShowcaseCard {
 }
 
 export default function ShowcaseCard(props: TShowcaseCard) {
-  const {name, image, screenName} = props;
+  const {name, screenName} = props;
   const navigation = useNavigation();
 
   return (
