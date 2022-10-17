@@ -4,15 +4,11 @@ import {MButton, MButtonVariations, MTitle, MTitleVariant} from 'matrix';
 
 export default function ButtonShowcase() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{marginTop: 20}}>
       <MTitle type={MTitleVariant.h5} content="Resting state" />
       <View>
         <Text style={{marginVertical: 20}}>Button primary</Text>
-        <MButton
-          title="Button"
-          type={MButtonVariations.primary}
-          prefix="arrowLeft"
-        />
+        <MButton title="Button" type={MButtonVariations.primary} />
       </View>
       <View>
         <Text style={{marginVertical: 20}}>Button secondary</Text>
