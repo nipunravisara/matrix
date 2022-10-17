@@ -1,11 +1,5 @@
 import React, {useState} from 'react';
-import {
-  TouchableHighlight,
-  TouchableOpacity,
-  View,
-  ViewStyle,
-} from 'react-native';
-import {Text} from 'react-native-svg';
+import {TouchableHighlight, View, ViewStyle} from 'react-native';
 import MIcon from '../MIcon/MIcon';
 import MLabel from '../MLabel/MLabel';
 import {MButtonStyles} from './getButtonStyles';

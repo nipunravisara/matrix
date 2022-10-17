@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  FlatList,
-  ImageBackground,
-  Platform,
-  SafeAreaView,
-  View,
-} from 'react-native';
+import {FlatList, SafeAreaView, View} from 'react-native';
 import {MHeader} from 'matrix';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
@@ -46,6 +40,8 @@ const components = [
   },
 ];
 export default function Showcase(props: TShowcase) {
+  console.log(props);
+
   return (
     <SafeAreaView>
       <MHeader
