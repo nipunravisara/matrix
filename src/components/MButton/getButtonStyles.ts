@@ -6,7 +6,7 @@ import {MButtonVariations, TMButton} from './MButton';
 function getButtonColor(
   colors: Pick<TTheme, 'colors'>,
   type: MButtonVariations,
-  disabled: boolean
+  disabled: boolean | undefined
 ): string {
   if (disabled && type !== MButtonVariations.ternary) {
     return colors.colors.ColorSurfaceTeritary;
@@ -43,7 +43,7 @@ function getButtonPressedColor(
 function getButtonLabelColor(
   colors: Pick<TTheme, 'colors'>,
   type: MButtonVariations,
-  disabled: boolean
+  disabled: boolean | undefined
 ): string {
   if (disabled) {
     return colors.colors.ColorTextTertiary;
@@ -77,22 +77,45 @@ function getButtonLabelPressedColor(
   }
 }
 
-export const MButtonStyles = ({
-  expanded,
-  prefix,
-  type,
-  disabled = false,
-}: TMButton) => {
+function getButtonSize(
+  expanded: boolean | undefined,
+  suffix: string | JSX.Element | undefined
+) {
+  if (!expanded && suffix) {
+    return 'stretch';
+  } else if (expanded) {
+    return 'stretch';
+  } else {
+    return 'flex-start';
+  }
+}
+
+function getButtonSpred(
+  expanded: boolean | undefined,
+  suffix: string | JSX.Element | undefined
+) {
+  if (!expanded && suffix) {
+    return 1;
+  } else if (expanded) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+export const MButtonStyles = (props: TMButton) => {
   const {colors, roundness} = useTheme();
+  const {expanded, suffix, type, disabled} = props;
 
   return StyleSheet.create({
     container: {
+      borderRadius: roundness,
       height: 48,
+      alignItems: 'center',
+      flexDirection: 'row',
       paddingVertical: 10,
       paddingHorizontal: 15,
-      alignSelf: expanded ? 'stretch' : 'flex-start',
-      borderRadius: roundness,
-      alignItems: 'center',
+      alignSelf: getButtonSize(expanded, suffix),
       justifyContent: 'center',
       backgroundColor: getButtonColor(
         {colors},
@@ -105,6 +128,20 @@ export const MButtonStyles = ({
     },
     innerContainer: {
       flexDirection: 'row',
+    },
+    leftContainer: {
+      flex: getButtonSpred(expanded, suffix),
+      alignItems: 'flex-start',
+    },
+    titleContainer: {
+      flex: getButtonSpred(expanded, suffix),
+      alignItems: 'center',
+    },
+    rightContainer: {
+      flex: getButtonSpred(expanded, suffix),
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
     },
     label: {
       color: getButtonLabelColor(
