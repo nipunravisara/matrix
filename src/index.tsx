@@ -16,6 +16,10 @@ import MButton, {
   MButtonVariations,
 } from './components/MButton/MButton';
 import MHeader, {TMHeader} from './components/MHeader/MHeader';
+import MTextInput, {
+  TMTextInput,
+  MTextInputStateVariations,
+} from './components/MTextInput/MTextInput';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
@@ -34,3 +38,5 @@ export {MButton, MButtonVariations};
 export type {TMButton};
 export {MHeader};
 export type {TMHeader};
+export {MTextInput, MTextInputStateVariations};
+export type {TMTextInput};
