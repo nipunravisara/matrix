@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import React from 'react';
-import {Button, SafeAreaView, ScrollView, Text, View} from 'react-native';
-import {MButton, MTextInputStateVariations, MTextInput} from 'matrix';
+import {SafeAreaView, ScrollView, Text} from 'react-native';
+import {MButton, MTextInput} from 'matrix';
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';

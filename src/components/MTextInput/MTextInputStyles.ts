@@ -16,6 +16,8 @@ function getBorderColor(colors: Pick<TTheme, 'colors'>): string {
 }
 
 export const MTextInputStyles = (props: TMTextInput) => {
+  console.log(props);
+
   const {colors} = useTheme();
 
   return StyleSheet.create({
