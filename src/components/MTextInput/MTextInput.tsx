@@ -1,11 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {
-  Text,
-  TextInput,
-  TouchableHighlight,
-  View,
-  ViewStyle,
-} from 'react-native';
+import React, {useState} from 'react';
+import {TextInput, TouchableHighlight, View, ViewStyle} from 'react-native';
 import MLabel from '../MLabel/MLabel';
 import {MTextInputStyles} from './MTextInputStyles';
 import {Control, Controller, FieldErrorsImpl} from 'react-hook-form';
@@ -59,7 +53,7 @@ export default function MTextInput(props: TMTextInput) {
       <Controller
         name={name}
         control={control}
-        render={({field: {onChange, onBlur, value}, fieldState}) => {
+        render={({field: {onChange, onBlur, value}}) => {
           return (
             <View style={MTextInputStyles(props).container}>
               <View style={MTextInputStyles(props).innerContainer}>

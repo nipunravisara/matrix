@@ -1,5 +1,4 @@
-name: Node.js Package
-
+name: Metrix pachage
 on:
   release:
     types: [created]
