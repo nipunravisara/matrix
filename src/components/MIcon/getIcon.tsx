@@ -1,5 +1,5 @@
 import React from 'react';
-import {ArrowExpand} from '../../assets/icons';
+import {ArrowExpand, Eye, NoPreview} from '../../assets/icons';
 import ChevronLeft from '../../assets/icons/ChevronLeft';
 import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
@@ -30,6 +30,10 @@ export const GetIcon = (props: TGetIcon): JSX.Element => {
       return <ArrowExpand color={getIconColor(color, isDark)} />;
     case 'chevronLeft':
       return <ChevronLeft color={getIconColor(color, isDark)} />;
+    case 'eye':
+      return <Eye color={getIconColor(color, isDark)} />;
+    case 'noPreview':
+      return <NoPreview color={getIconColor(color, isDark)} />;
     default:
       return <ArrowExpand color={getIconColor(color, isDark)} />;
   }

@@ -16,7 +16,7 @@ export interface TMButton {
   styles?: ViewStyle;
   prefix?: JSX.Element | string;
   suffix?: JSX.Element | string;
-  onPress?: () => void;
+  onPress?: (data?: any) => void;
   disabled?: boolean;
 }
 
