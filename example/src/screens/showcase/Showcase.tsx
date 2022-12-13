@@ -34,6 +34,11 @@ const components = [
     screenName: 'TextShowcase',
   },
   {
+    name: 'Text Input',
+    image: '',
+    screenName: 'TextInputShowcase',
+  },
+  {
     name: 'Title',
     image: '',
     screenName: 'TitleShowcase',

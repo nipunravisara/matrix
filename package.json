@@ -1,5 +1,5 @@
 {
-  "name": "matrix",
+  "name": "@nipunravisara/matrix",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/nipunravisara/matrix#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "@nipunravisara:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
@@ -146,7 +146,9 @@
     ]
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
     "react-hook-form": "^7.37.0",
-    "react-native-svg": "^13.4.0"
+    "react-native-svg": "^13.4.0",
+    "yup": "^0.32.11"
   }
 }

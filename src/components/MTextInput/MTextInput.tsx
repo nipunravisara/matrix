@@ -1,5 +1,11 @@
-import React, {useState} from 'react';
-import {TextInput, TouchableHighlight, View, ViewStyle} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {
+  Text,
+  TextInput,
+  TouchableHighlight,
+  View,
+  ViewStyle,
+} from 'react-native';
 import MLabel from '../MLabel/MLabel';
 import {MTextInputStyles} from './MTextInputStyles';
 import {Control, Controller, FieldErrorsImpl} from 'react-hook-form';
@@ -7,9 +13,10 @@ import MText, {MTextVariant} from '../MText/MText';
 import MIcon from '../MIcon/MIcon';
 
 export enum MTextInputStateVariations {
+  default,
+  focused,
   success,
   error,
-  default,
 }
 
 export interface TMTextInput {
@@ -18,26 +25,33 @@ export interface TMTextInput {
   placeholder: string;
   hint?: string;
   prefix?: JSX.Element | string;
-  state?: MTextInputStateVariations;
   styles?: ViewStyle;
   control: Control<any, any>;
   secured?: boolean;
-  errors?: Partial<FieldErrorsImpl<any>>;
+  errors: Partial<FieldErrorsImpl<any>>;
+}
+
+function getErrors(props: TMTextInput): JSX.Element | undefined {
+  const {name, errors} = props;
+
+  if (errors && errors[name]) {
+    return (
+      <MText
+        content={errors[name]?.message as string}
+        type={MTextVariant.p3}
+        styles={MTextInputStyles(props).error}
+      />
+    );
+  }
+  return;
 }
 
 export default function MTextInput(props: TMTextInput) {
-  const [preview, setPreview] = useState(false);
-  const {
-    label,
-    name,
-    placeholder,
-    hint,
-    prefix,
-    styles,
-    errors,
-    control,
-    secured,
-  } = props;
+  const {label, name, placeholder, hint, prefix, styles, control, secured} =
+    props;
+
+  const [preview, setPreview] = useState<boolean>(false);
+
   // ControllerRenderProps<any>
   return (
     <View style={styles}>
@@ -45,53 +59,51 @@ export default function MTextInput(props: TMTextInput) {
       <Controller
         name={name}
         control={control}
-        render={({field}) => (
-          <View style={MTextInputStyles(props).container}>
-            <View style={MTextInputStyles(props).innerContainer}>
-              {prefix && typeof prefix === 'string' ? (
-                <View style={{marginRight: 8}}>
+        render={({field: {onChange, onBlur, value}, fieldState}) => {
+          return (
+            <View style={MTextInputStyles(props).container}>
+              <View style={MTextInputStyles(props).innerContainer}>
+                {prefix && typeof prefix === 'string' ? (
+                  <View style={{marginRight: 8}}>
+                    <MIcon
+                      name={prefix}
+                      color={MTextInputStyles(props).prefix.color}
+                    />
+                  </View>
+                ) : (
+                  prefix
+                )}
+                <TextInput
+                  onBlur={onBlur}
+                  onChangeText={(value) => onChange(value)}
+                  value={value as string}
+                  placeholder={placeholder}
+                  placeholderTextColor={
+                    MTextInputStyles(props).placeholder.color
+                  }
+                  secureTextEntry={secured && !preview}
+                  style={MTextInputStyles(props).textField}
+                />
+              </View>
+              {secured && (
+                <TouchableHighlight
+                  underlayColor={'#0000'}
+                  onPress={() => setPreview(!preview)}
+                >
                   <MIcon
-                    name={prefix}
+                    name={!preview ? 'noPreview' : 'eye'}
                     color={MTextInputStyles(props).prefix.color}
                   />
-                </View>
-              ) : (
-                prefix
+                </TouchableHighlight>
               )}
-              <TextInput
-                onBlur={field.onBlur}
-                onChangeText={(value) => field.onChange(value)}
-                value={field.value as string}
-                placeholder={placeholder}
-                placeholderTextColor={MTextInputStyles(props).placeholder.color}
-                secureTextEntry={secured && !preview}
-                style={MTextInputStyles(props).textField}
-              />
             </View>
-            {secured && (
-              <TouchableHighlight
-                underlayColor={'#0000'}
-                onPress={() => setPreview(!preview)}
-              >
-                <MIcon
-                  name={!preview ? 'noPreview' : 'eye'}
-                  color={MTextInputStyles(props).prefix.color}
-                />
-              </TouchableHighlight>
-            )}
-          </View>
-        )}
+          );
+        }}
         rules={{
           required: true,
         }}
       />
-      {errors && (
-        <MText
-          content={errors.username}
-          type={MTextVariant.p3}
-          styles={MTextInputStyles(props).error}
-        />
-      )}
+      {getErrors(props)}
       {hint && (
         <MText
           content={hint}

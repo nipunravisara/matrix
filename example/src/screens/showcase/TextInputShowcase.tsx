@@ -1,27 +1,38 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import React from 'react';
-import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import {Button, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import {MButton, MTextInputStateVariations, MTextInput} from 'matrix';
 import {useForm} from 'react-hook-form';
+import {yupResolver} from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import type {SchemaOf} from 'yup';
 
-type FormTypes = {
+interface FormTypes {
   username: string;
   password: string;
-};
+}
 
 export default function TextInputShowcase() {
+  const schema: SchemaOf<FormTypes> = yup
+    .object({
+      username: yup.string().required(),
+      password: yup.string().min(8).required(),
+    })
+    .required();
+
   const {
     control,
     handleSubmit,
     formState: {errors},
   } = useForm<FormTypes>({
+    resolver: yupResolver(schema),
     defaultValues: {
       username: '',
       password: '',
     },
   });
 
-  const onSubmit = (data: FormTypes) => console.log(data);
+  const onSubmit = (data: FormTypes) => console.log(111, data);
 
   return (
     <SafeAreaView style={{marginTop: 20, marginHorizontal: 10}}>
@@ -32,6 +43,7 @@ export default function TextInputShowcase() {
           name="username"
           placeholder="username"
           control={control}
+          errors={errors}
         />
         <MTextInput
           label="Password"
@@ -41,6 +53,7 @@ export default function TextInputShowcase() {
           secured
           hint="Need strong password"
           styles={{marginTop: 20}}
+          errors={errors}
         />
         <MButton
           title="Submit"
@@ -48,7 +61,6 @@ export default function TextInputShowcase() {
           expanded
           styles={{marginTop: 20}}
         />
-        <Text>---------------- Component ------------</Text>
         {/* <View>
           <Text style={{marginVertical: 20}}>Text input resting</Text>
           <MTextInput

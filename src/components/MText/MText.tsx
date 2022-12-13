@@ -13,7 +13,7 @@ export enum MTextVariant {
 
 export interface TMText {
   type?: MTextVariant;
-  content: string;
+  content: string | undefined;
   styles?: TextStyle;
 }
 

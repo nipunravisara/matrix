@@ -2,47 +2,21 @@ import {StyleSheet} from 'react-native';
 import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 import type {TMTextInput} from './MTextInput';
-import {MTextInputStateVariations} from './MTextInput';
 
-function getPrefixColor(
-  colors: Pick<TTheme, 'colors'>,
-  state: MTextInputStateVariations | undefined
-): string {
-  if (state === MTextInputStateVariations.error) {
-    return colors.colors.ColorPrimaryWarning;
-  } else if (state === MTextInputStateVariations.success) {
-    return colors.colors.ColorPrimarySuccess;
-  }
+function getPrefixColor(colors: Pick<TTheme, 'colors'>): string {
   return colors.colors.ColorTextSecondary;
 }
 
-function getHintColor(
-  colors: Pick<TTheme, 'colors'>,
-  state: MTextInputStateVariations | undefined
-): string {
-  if (state === MTextInputStateVariations.error) {
-    return colors.colors.ColorPrimaryWarning;
-  } else if (state === MTextInputStateVariations.success) {
-    return colors.colors.ColorPrimarySuccess;
-  }
+function getHintColor(colors: Pick<TTheme, 'colors'>): string {
   return colors.colors.ColorTextSecondary;
 }
 
-function getBorderColor(
-  colors: Pick<TTheme, 'colors'>,
-  state: MTextInputStateVariations | undefined
-): string {
-  if (state === MTextInputStateVariations.error) {
-    return colors.colors.ColorPrimaryWarning;
-  } else if (state === MTextInputStateVariations.success) {
-    return colors.colors.ColorPrimarySuccess;
-  }
+function getBorderColor(colors: Pick<TTheme, 'colors'>): string {
   return colors.colors.ColorBorderBorderPrimary;
 }
 
 export const MTextInputStyles = (props: TMTextInput) => {
   const {colors} = useTheme();
-  const {state} = props;
 
   return StyleSheet.create({
     container: {
@@ -50,7 +24,7 @@ export const MTextInputStyles = (props: TMTextInput) => {
       alignItems: 'center',
       justifyContent: 'space-between',
       paddingHorizontal: 16,
-      borderColor: getBorderColor({colors}, state),
+      borderColor: getBorderColor({colors}),
       borderWidth: 1,
       height: 52,
     },
@@ -65,14 +39,14 @@ export const MTextInputStyles = (props: TMTextInput) => {
     },
     hint: {
       marginTop: 4,
-      color: getHintColor({colors}, state),
+      color: getHintColor({colors}),
     },
     error: {
       marginTop: 4,
       color: colors.ColorPrimaryWarning,
     },
     prefix: {
-      color: getPrefixColor({colors}, state),
+      color: getPrefixColor({colors}),
     },
   });
 };
