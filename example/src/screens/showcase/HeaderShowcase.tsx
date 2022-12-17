@@ -5,7 +5,7 @@ import {SafeAreaView, ScrollView, Text, View} from 'react-native';
 export default function HeaderShowcase() {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView style={{backgroundColor: '#323232'}}>
         <View>
           <Text style={{marginVertical: 20}}>Header with title</Text>
           <MHeader title={'Page Header'} />

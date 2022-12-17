@@ -1,10 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {ColorValue, FlexAlignType, StyleSheet} from 'react-native';
+import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 import type {TMHeader} from './MHeader';
 
-export default function getTitleAlignment(
+function getTitleAlignment(
   titleAlignment: Pick<TMHeader, 'titleAlignment'>['titleAlignment']
-) {
+): FlexAlignType {
   switch (titleAlignment) {
     case 'left':
       return 'flex-start';
@@ -17,12 +18,35 @@ export default function getTitleAlignment(
   }
 }
 
+function getBorderBottomColor(
+  isDark: Pick<TTheme, 'isDark'>['isDark'],
+  colors: Pick<TTheme, 'colors'>['colors'],
+  bottomLine: Pick<TMHeader, 'bottomLine'>['bottomLine']
+): string {
+  if (bottomLine && isDark) {
+    return colors.ColorSurfaceInverseTertiary;
+  } else if (bottomLine && !isDark) {
+    return colors.ColorBorderBorderPrimary;
+  } else {
+    return colors.ColorBorderBorderPrimary;
+  }
+}
+
 export const MHeaderStyles = ({
   bottomLine,
   titleAlignment,
   styles,
 }: TMHeader) => {
-  const {colors} = useTheme();
+  const {isDark, colors} = useTheme();
+
+  const containerStyles = {
+    backgroundColor: isDark
+      ? (colors.ColorSurfaceInversePrimary as ColorValue)
+      : (colors.ColorSurfacePrimary as ColorValue),
+    borderBottomColor: getBorderBottomColor(isDark, colors, bottomLine),
+  };
+
+  //ColorSurfaceInverseSecondary
 
   return StyleSheet.create({
     container: {
@@ -31,10 +55,7 @@ export const MHeaderStyles = ({
       flexDirection: 'row',
       justifyContent: 'space-between',
       borderBottomWidth: bottomLine ? 0.5 : 0,
-      backgroundColor: colors.ColorSurfacePrimary,
-      borderBottomColor: bottomLine
-        ? colors.ColorBorderBorderPrimary
-        : colors.ColorSurfacePrimary,
+      ...containerStyles,
       ...styles,
     },
     leftContainer: {
