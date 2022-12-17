@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, SafeAreaView, View} from 'react-native';
-import {MHeader} from 'matrix';
+import {MHeader} from '../../../../';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';

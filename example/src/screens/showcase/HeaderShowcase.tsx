@@ -1,5 +1,5 @@
 import React from 'react';
-import {MHeader, MLabel} from 'matrix';
+import {MHeader, MLabel} from '../../../../';
 import {SafeAreaView, ScrollView, Text, View} from 'react-native';
 
 export default function HeaderShowcase() {
@@ -7,20 +7,43 @@ export default function HeaderShowcase() {
     <SafeAreaView>
       <ScrollView>
         <View>
-          <Text style={{marginVertical: 20}}>Header without bottomLine</Text>
+          <Text style={{marginVertical: 20}}>Header with title</Text>
           <MHeader title={'Page Header'} />
+        </View>
+        <View>
+          <Text style={{marginVertical: 20}}>Header without bottomLine</Text>
+          <MHeader title={'Page Header'} bottomLine />
         </View>
         <View>
           <Text style={{marginVertical: 20}}>Header with subtitle</Text>
           <MHeader title={'Page Header'} subTitle="Normal" />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header with title</Text>
-          <MHeader title={'Page Header'} bottomLine />
+          <Text style={{marginVertical: 20}}>Header align left</Text>
+          <MHeader
+            title="Page Header"
+            subTitle="Header"
+            titleAlignment="left"
+          />
+        </View>
+        <View>
+          <Text style={{marginVertical: 20}}>Header align right</Text>
+          <MHeader
+            title={'Page Header'}
+            subTitle="Header"
+            titleAlignment="right"
+            styles={{paddingRight: 15}}
+          />
         </View>
         <View>
           <Text style={{marginVertical: 20}}>Header with title and back</Text>
-          <MHeader title={'Page Header'} bottomLine left="goBack" />
+
+          <MHeader
+            title={'Page Header'}
+            bottomLine
+            left="goBack"
+            leftPress={() => console.log('Go back pressed')}
+          />
         </View>
         <View>
           <Text style={{marginVertical: 20}}>
