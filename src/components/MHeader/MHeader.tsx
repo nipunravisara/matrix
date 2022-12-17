@@ -14,7 +14,6 @@ export interface TMHeader {
   left?: JSX.Element | 'goBack';
   leftPress?: () => void;
   right?: JSX.Element[];
-  rightPress?: () => void;
   bottomLine?: boolean;
   styles?: ViewStyle;
 }
@@ -26,7 +25,6 @@ export default function MHeader(props: TMHeader) {
     left,
     right,
     leftPress,
-    rightPress,
     titleAlignment,
     titleStyles,
     subTitleStyles,
