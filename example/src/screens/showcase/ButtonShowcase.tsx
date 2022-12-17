@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
-import {MButton, MButtonVariations, MTitle, MTitleVariant} from 'matrix';
+import {MButton, MButtonVariations, MTitle, MTitleVariant} from '../../../../';
 
 export default function ButtonShowcase() {
   return (

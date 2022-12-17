@@ -1,4 +1,4 @@
-import {getFontVariation, TTheme} from 'matrix';
+import {getFontVariation, TTheme} from '../../../';
 
 import {
   ColorAllBaseBlack,

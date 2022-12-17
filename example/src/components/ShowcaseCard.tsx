@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
-import {MLabel} from 'matrix';
+import {MLabel} from '../../../';
 import {useNavigation} from '@react-navigation/native';
 
 interface TShowcaseCard {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
-import {MLabelVariations, MLabel} from 'matrix';
+import {MLabelVariations, MLabel} from '../../../../';
 
 export default function LabelShowcase() {
   return (

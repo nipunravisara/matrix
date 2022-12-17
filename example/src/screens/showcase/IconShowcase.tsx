@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, SafeAreaView, TouchableOpacity, View} from 'react-native';
-import {MIcon, MText} from 'matrix';
+import {MIcon, MText} from '../../../../';
 
 interface TIcons {
   name: string;
