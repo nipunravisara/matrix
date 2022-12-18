@@ -12,6 +12,7 @@ import MTitle, {MTitleVariant, TMtitle} from './components/MTitle/Mtitle';
 import MIcon, {TMIcon} from './components/MIcon/MIcon';
 import MIconButton, {TMIconButton} from './components/MIconButton/MIconButton';
 import MLabel, {TMLabel, MLabelVariations} from './components/MLabel/MLabel';
+import MSheet, {TMSheet} from './components/MSheet/MSheet';
 import MButton, {
   TMButton,
   MButtonVariations,
@@ -27,6 +28,7 @@ export type {TThemeProvider, TTheme};
 
 export {getFontVariation};
 
+export {MSheet, TMSheet};
 export {MText, MTextVariant};
 export type {TMText};
 export {MTitle, MTitleVariant};
