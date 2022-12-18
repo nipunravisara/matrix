@@ -75,7 +75,7 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.11.0)
   - libevent (2.1.12)
-  - matrix (0.1.0):
+  - matrix (1.0.1-beta.0):
     - React-Core
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.06.28.00-v2):
@@ -375,12 +375,12 @@ PODS:
     - React-perflogger (= 0.68.2)
   - RNCMaskedView (0.2.8):
     - React-Core
-  - RNGestureHandler (2.7.0):
+  - RNGestureHandler (2.8.0):
     - React-Core
-  - RNScreens (3.18.0):
+  - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
-  - RNSVG (13.4.0):
+  - RNSVG (13.6.0):
     - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
@@ -569,7 +569,7 @@ SPEC CHECKSUMS:
   glog: 476ee3e89abb49e07f822b48323c51c57124b572
   hermes-engine: 84e3af1ea01dd7351ac5d8689cbbea1f9903ffc3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  matrix: 3a2d019f141d4003e9cca7d416d119e62daf075b
+  matrix: 7dae6efed5c09466d6fac291bec704787b34749c
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 4d8508a426467c48885f1151029bc15fa5d7b3b8
   RCTRequired: 3e917ea5377751094f38145fdece525aa90545a0
@@ -599,9 +599,9 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: b960b687d2dfef0d3761fbb187e01812ebab8b23
   ReactCommon: 095366164a276d91ea704ce53cb03825c487a3f2
   RNCMaskedView: 1f6cd0cb5e38ec01960e12fd8f95ecad809f8fbb
-  RNGestureHandler: 7673697e7c0e9391adefae4faa087442bc04af33
-  RNScreens: f3230dd008a7d0ce5c0a8bc78ff12cf2315bda24
-  RNSVG: 07dbd870b0dcdecc99b3a202fa37c8ca163caec2
+  RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
+  RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
+  RNSVG: 3a79c0c4992213e4f06c08e62730c5e7b9e4dc17
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
