@@ -60,7 +60,7 @@ export default function MTextInput(props: TMTextInput) {
                 {prefix && typeof prefix === 'string' ? (
                   <View style={{marginRight: 8}}>
                     <MIcon
-                      name={prefix}
+                      iconName={prefix}
                       color={MTextInputStyles(props).prefix.color}
                     />
                   </View>
@@ -85,7 +85,7 @@ export default function MTextInput(props: TMTextInput) {
                   onPress={() => setPreview(!preview)}
                 >
                   <MIcon
-                    name={!preview ? 'noPreview' : 'eye'}
+                    iconName={!preview ? 'noPreview' : 'eye'}
                     color={MTextInputStyles(props).prefix.color}
                   />
                 </TouchableHighlight>

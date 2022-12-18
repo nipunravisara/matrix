@@ -5,7 +5,7 @@ import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 
 interface TGetIcon {
-  name: string;
+  iconName: string;
   color?: string;
 }
 
@@ -23,9 +23,9 @@ function getIconColor(
 
 export const GetIcon = (props: TGetIcon): JSX.Element => {
   const {isDark} = useTheme();
-  const {name, color} = props;
+  const {iconName, color} = props;
 
-  switch (name) {
+  switch (iconName) {
     case 'arrowExpand':
       return <ArrowExpand color={getIconColor(color, isDark)} />;
     case 'chevronLeft':

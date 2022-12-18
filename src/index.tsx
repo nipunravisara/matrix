@@ -10,6 +10,7 @@ import {getFontVariation} from './utils/getFontWeight';
 import MText, {MTextVariant, TMText} from './components/MText/MText';
 import MTitle, {MTitleVariant, TMtitle} from './components/MTitle/Mtitle';
 import MIcon, {TMIcon} from './components/MIcon/MIcon';
+import MIconButton, {TMIconButton} from './components/MIconButton/MIconButton';
 import MLabel, {TMLabel, MLabelVariations} from './components/MLabel/MLabel';
 import MButton, {
   TMButton,
@@ -32,6 +33,8 @@ export {MTitle, MTitleVariant};
 export type {TMtitle};
 export {MIcon};
 export type {TMIcon};
+export {MIconButton};
+export type {TMIconButton};
 export {MLabel, MLabelVariations};
 export type {TMLabel};
 export {MButton, MButtonVariations};

@@ -47,7 +47,7 @@ export default function MButton(props: TMButton) {
             {prefix && typeof prefix === 'string' ? (
               <>
                 <MIcon
-                  name={prefix}
+                  iconName={prefix}
                   color={
                     pressed
                       ? MButtonStyles(props).labelPressed.color
@@ -73,7 +73,7 @@ export default function MButton(props: TMButton) {
           {suffix && typeof suffix === 'string' ? (
             <>
               <MIcon
-                name={suffix}
+                iconName={suffix}
                 color={
                   pressed
                     ? MButtonStyles(props).labelPressed.color
