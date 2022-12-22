@@ -7,19 +7,25 @@ export default function HeaderShowcase() {
     <SafeAreaView>
       <ScrollView style={{backgroundColor: '#323232'}}>
         <View>
-          <Text style={{marginVertical: 20}}>Header with title</Text>
+          <MLabel content={'Header with title'} styles={{marginVertical: 20}} />
           <MHeader title={'Page Header'} />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header without bottomLine</Text>
+          <MLabel
+            content={'Header without bottomLine'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader title={'Page Header'} bottomLine />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header with subtitle</Text>
+          <MLabel
+            content={'Header with subtitle'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader title={'Page Header'} subTitle="Normal" />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header align left</Text>
+          <MLabel content={'Header align left'} styles={{marginVertical: 20}} />
           <MHeader
             title="Page Header"
             subTitle="Header"
@@ -27,7 +33,10 @@ export default function HeaderShowcase() {
           />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header align right</Text>
+          <MLabel
+            content={'Header align right'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader
             title={'Page Header'}
             subTitle="Header"
@@ -36,8 +45,10 @@ export default function HeaderShowcase() {
           />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>Header with title and back</Text>
-
+          <MLabel
+            content={'Header with title and back'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader
             title={'Page Header'}
             bottomLine
@@ -46,9 +57,10 @@ export default function HeaderShowcase() {
           />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>
-            Header with title and left action
-          </Text>
+          <MLabel
+            content={'Header with title and left action'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader
             title={'Page Header'}
             bottomLine
@@ -56,9 +68,10 @@ export default function HeaderShowcase() {
           />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>
-            Header with title and right action
-          </Text>
+          <MLabel
+            content={' Header with title and right action'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader
             title={'Page Header'}
             bottomLine
@@ -66,9 +79,10 @@ export default function HeaderShowcase() {
           />
         </View>
         <View>
-          <Text style={{marginVertical: 20}}>
-            Header with title, left and right actions
-          </Text>
+          <MLabel
+            content={'Header with title, left and right actions'}
+            styles={{marginVertical: 20}}
+          />
           <MHeader
             title={'Page Header'}
             bottomLine

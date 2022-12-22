@@ -6,15 +6,15 @@ import useTheme from '../../theme/useTheme';
 
 interface TGetIcon {
   iconName: string;
-  color?: string;
+  iconColor?: string;
 }
 
 function getIconColor(
-  color: string | undefined,
+  iconColor: string | undefined,
   isDark: Pick<TTheme, 'isDark'>['isDark']
 ): string {
-  if (color) {
-    return color;
+  if (iconColor) {
+    return iconColor;
   } else if (isDark) {
     return '#fff';
   }
@@ -23,18 +23,18 @@ function getIconColor(
 
 export const GetIcon = (props: TGetIcon): JSX.Element => {
   const {isDark} = useTheme();
-  const {iconName, color} = props;
+  const {iconName, iconColor} = props;
 
   switch (iconName) {
     case 'arrowExpand':
-      return <ArrowExpand color={getIconColor(color, isDark)} />;
+      return <ArrowExpand color={getIconColor(iconColor, isDark)} />;
     case 'chevronLeft':
-      return <ChevronLeft color={getIconColor(color, isDark)} />;
+      return <ChevronLeft color={getIconColor(iconColor, isDark)} />;
     case 'eye':
-      return <Eye color={getIconColor(color, isDark)} />;
+      return <Eye color={getIconColor(iconColor, isDark)} />;
     case 'noPreview':
-      return <NoPreview color={getIconColor(color, isDark)} />;
+      return <NoPreview color={getIconColor(iconColor, isDark)} />;
     default:
-      return <ArrowExpand color={getIconColor(color, isDark)} />;
+      return <ArrowExpand color={getIconColor(iconColor, isDark)} />;
   }
 };

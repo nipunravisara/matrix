@@ -1,42 +1,75 @@
 import React from 'react';
-import {FlatList, SafeAreaView, View} from 'react-native';
-import {MIconButton, MText} from '../../../../';
+import {FlatList, View} from 'react-native';
+import {
+  MIconButton,
+  MIconButtonSize,
+  MIconButtonVariations,
+  MSheet,
+  TMIconButton,
+} from '../../../../';
 
-interface TIcons {
-  name: string;
-  title: string;
-}
-
-const icons: TIcons[] = [
+const primaryIcons: TMIconButton[] = [
   {
-    name: 'arrowExpand',
-    title: 'Arrow expand',
+    iconName: 'arrowExpand',
+    type: MIconButtonVariations.Primary,
+    size: MIconButtonSize.Large,
   },
   {
-    name: 'chevronLeft',
-    title: 'Chevron left',
+    iconName: 'chevronLeft',
+    type: MIconButtonVariations.Primary,
+    color: 'red',
+  },
+  {
+    iconName: 'chevronLeft',
+    type: MIconButtonVariations.Primary,
+    size: MIconButtonSize.Small,
   },
 ];
 
-const RenderItem = ({item}: {item: TIcons}) => {
+const secondaryIcons: TMIconButton[] = [
+  {
+    iconName: 'arrowExpand',
+    size: MIconButtonSize.Large,
+  },
+  {
+    iconName: 'chevronLeft',
+  },
+  {
+    iconName: 'chevronLeft',
+    size: MIconButtonSize.Small,
+  },
+];
+
+const RenderItem = ({item}: {item: TMIconButton}) => {
   return (
     <View
       style={{flexDirection: 'row', alignItems: 'center', marginVertical: 10}}
     >
-      <MIconButton iconName={item.name} styles={{padding: 5}} />
-      <View style={{marginLeft: 20}}>
-        <MText content={item.title} />
-      </View>
+      <MIconButton
+        iconName={item.iconName}
+        type={item.type}
+        color={item.color}
+        size={item.size}
+        styles={{padding: 5}}
+      />
     </View>
   );
 };
 
 export default function IconButtonShowcase() {
   return (
-    <SafeAreaView>
-      <View style={{paddingHorizontal: 20, marginTop: 30}}>
-        <FlatList<TIcons> data={icons} renderItem={RenderItem} />
+    <MSheet>
+      <View>
+        <View style={{paddingHorizontal: 20, marginTop: 30}}>
+          <FlatList<TMIconButton> data={primaryIcons} renderItem={RenderItem} />
+        </View>
+        <View style={{paddingHorizontal: 20, marginTop: 30}}>
+          <FlatList<TMIconButton>
+            data={secondaryIcons}
+            renderItem={RenderItem}
+          />
+        </View>
       </View>
-    </SafeAreaView>
+    </MSheet>
   );
 }

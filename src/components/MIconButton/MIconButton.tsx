@@ -8,23 +8,31 @@ export enum MIconButtonVariations {
   Secondary,
 }
 
+export enum MIconButtonSize {
+  Large,
+  Medium,
+  Small,
+}
+
 export interface TMIconButton {
   iconName: string;
   color?: string;
+  iconColor?: string;
   type?: MIconButtonVariations;
+  size?: MIconButtonSize;
   onPress?: () => void;
   styles?: ViewStyle;
 }
 
 export default function MIconButton(props: TMIconButton) {
-  const {iconName, color, onPress} = props;
+  const {iconName, iconColor, onPress} = props;
 
   return (
     <TouchableOpacity
       onPress={onPress}
       style={MIconButtonStyles(props).container}
     >
-      {GetIcon({iconName, color})}
+      {GetIcon({iconName, iconColor})}
     </TouchableOpacity>
   );
 }

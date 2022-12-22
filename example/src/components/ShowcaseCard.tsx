@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
-import {MLabel} from '../../../';
+import {MLabel, useTheme} from '../../../';
 import {useNavigation} from '@react-navigation/native';
 
 interface TShowcaseCard {
@@ -12,11 +12,12 @@ interface TShowcaseCard {
 export default function ShowcaseCard(props: TShowcaseCard) {
   const {name, screenName} = props;
   const navigation = useNavigation();
+  const {isDark} = useTheme();
 
   return (
     <TouchableOpacity
       style={{
-        backgroundColor: 'white',
+        backgroundColor: isDark ? 'black' : 'white',
         flex: 1,
         margin: 5,
         padding: 10,
