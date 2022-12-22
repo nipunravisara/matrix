@@ -15,7 +15,7 @@ export default function App(): JSX.Element {
           backgroundColor="transparent"
           barStyle={theme.isDark ? 'light-content' : 'dark-content'}
         />
-        <Navigator initialScreen="IconShowcase" />
+        <Navigator initialScreen="Showcase" />
       </NavigationContainer>
     </ThemeProvider>
   );

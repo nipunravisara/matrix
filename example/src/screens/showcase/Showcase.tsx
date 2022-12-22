@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, SafeAreaView, View} from 'react-native';
-import {MHeader} from '../../../../';
+import {MHeader, MSheet} from '../../../../';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
@@ -24,6 +24,11 @@ const components = [
     screenName: 'IconShowcase',
   },
   {
+    name: 'Icon Button',
+    image: '',
+    screenName: 'IconButtonShowcase',
+  },
+  {
     name: 'Label',
     image: '',
     screenName: 'LabelShowcase',
@@ -44,29 +49,32 @@ const components = [
     screenName: 'TitleShowcase',
   },
 ];
+
 export default function Showcase(props: TShowcase) {
   console.log(props);
 
   return (
-    <SafeAreaView>
-      <MHeader
-        title="Showcase"
-        styles={{backgroundColor: 'transparent', borderColor: 'transparent'}}
-        titleStyles={{fontSize: 24, color: '#fff'}}
-      />
+    <MSheet>
       <View>
-        <FlatList
-          data={components}
-          numColumns={2}
-          renderItem={({item}) => (
-            <ShowcaseCard
-              name={item.name}
-              image={item.image}
-              screenName={item.screenName}
-            />
-          )}
+        <MHeader
+          title="Showcase"
+          styles={{backgroundColor: 'transparent', borderColor: 'transparent'}}
+          titleStyles={{fontSize: 24, color: '#fff'}}
         />
+        <View>
+          <FlatList
+            data={components}
+            numColumns={2}
+            renderItem={({item}) => (
+              <ShowcaseCard
+                name={item.name}
+                image={item.image}
+                screenName={item.screenName}
+              />
+            )}
+          />
+        </View>
       </View>
-    </SafeAreaView>
+    </MSheet>
   );
 }
