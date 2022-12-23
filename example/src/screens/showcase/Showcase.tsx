@@ -48,6 +48,11 @@ const components = [
     image: '',
     screenName: 'TitleShowcase',
   },
+  {
+    name: 'List Item',
+    image: '',
+    screenName: 'ListItemShowcase',
+  },
 ];
 
 export default function Showcase(props: TShowcase) {
