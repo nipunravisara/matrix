@@ -85,7 +85,7 @@ export default function TextInputShowcase() {
           <MTextInput
             label="Name"
             name="name"
-            prefix="arrowExpand"
+            prefix="arrow-left-outline"
             placeholder="Name"
             control={control}
           />
@@ -96,7 +96,7 @@ export default function TextInputShowcase() {
             label="Age"
             name="age"
             placeholder="Age"
-            prefix="arrowExpand"
+            prefix="arrow-left-outline"
             hint="Validation success"
             state={MTextInputStateVariations.success}
             control={control}
@@ -108,7 +108,7 @@ export default function TextInputShowcase() {
             label="City"
             name="city"
             placeholder="City"
-            prefix="arrowExpand"
+            prefix="arrow-left-outline"
             hint="Validation failed"
             state={MTextInputStateVariations.error}
             control={control}

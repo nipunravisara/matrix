@@ -9,13 +9,13 @@ export default function ListItemShowcase() {
         title="Title"
         subtitle="subtitle"
         caption="23.23AP"
-        prefix={<MIconButton iconName={'arrowLeft'} />}
+        prefix={<MIconButton iconName={'play-outline'} />}
       />
       <MListItem
         title="Title"
         subtitle="subtitle"
         caption="23.23AP"
-        prefix={<MIconButton iconName={'arrowLeft'} />}
+        prefix={<MIconButton iconName={'pause-outline'} />}
       />
     </SafeAreaView>
   );

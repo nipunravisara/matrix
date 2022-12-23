@@ -9,10 +9,13 @@ import {
 
 function getIconButtonType(
   colors: Pick<TTheme, 'colors'>['colors'],
-  type?: MIconButtonVariations,
-  color?: string
+  type?: Pick<TMIconButton, 'type'>['type'],
+  color?: Pick<TMIconButton, 'color'>['color'],
+  disabled?: Pick<TMIconButton, 'disabled'>['disabled']
 ) {
-  if (color) {
+  if (disabled && type === MIconButtonVariations.Primary) {
+    return colors.ColorStateDisabled;
+  } else if (color) {
     return color;
   } else if (type === MIconButtonVariations.Primary) {
     return colors.ColorPrimaryPrimaryColor;
@@ -62,7 +65,7 @@ export default function getIconButtonColor(
 
 export const MIconButtonStyles = (props: TMIconButton) => {
   const {colors} = useTheme();
-  const {size, color, type} = props;
+  const {size, color, type, disabled} = props;
 
   const iconButtonStyles = {
     height: getIconButtonSize(size),
@@ -74,7 +77,7 @@ export const MIconButtonStyles = (props: TMIconButton) => {
       borderRadius: 1000,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: getIconButtonType(colors, type, color),
+      backgroundColor: getIconButtonType(colors, type, color, disabled),
       ...iconButtonStyles,
     },
   });

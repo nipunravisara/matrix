@@ -14,9 +14,6 @@ export interface TMListItem {
 }
 
 export default function MListItem(props: TMListItem) {
-  console.log(props);
-
-  //   const theme = useTheme();
   const {title, subtitle, caption, prefix} = props;
 
   return (

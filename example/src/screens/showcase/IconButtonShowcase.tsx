@@ -10,33 +10,44 @@ import {
 
 const primaryIcons: TMIconButton[] = [
   {
-    iconName: 'arrowExpand',
+    iconName: 'eye-outline',
     type: MIconButtonVariations.Primary,
     size: MIconButtonSize.Large,
   },
   {
-    iconName: 'chevronLeft',
+    iconName: 'eye-outline',
     type: MIconButtonVariations.Primary,
     color: 'red',
   },
   {
-    iconName: 'chevronLeft',
+    iconName: 'eye-outline',
     type: MIconButtonVariations.Primary,
     size: MIconButtonSize.Small,
+  },
+  {
+    iconName: 'eye-outline',
+    type: MIconButtonVariations.Primary,
+    size: MIconButtonSize.Large,
+    disabled: true,
   },
 ];
 
 const secondaryIcons: TMIconButton[] = [
   {
-    iconName: 'arrowExpand',
+    iconName: 'arrow-left-outline',
     size: MIconButtonSize.Large,
   },
   {
-    iconName: 'chevronLeft',
+    iconName: 'arrow-left-outline',
   },
   {
-    iconName: 'chevronLeft',
+    iconName: 'arrow-left-outline',
     size: MIconButtonSize.Small,
+  },
+  {
+    iconName: 'arrow-left-outline',
+    size: MIconButtonSize.Large,
+    disabled: true,
   },
 ];
 
@@ -51,6 +62,7 @@ const RenderItem = ({item}: {item: TMIconButton}) => {
         color={item.color}
         size={item.size}
         styles={{padding: 5}}
+        disabled={item.disabled}
       />
     </View>
   );
