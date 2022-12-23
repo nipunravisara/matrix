@@ -36,7 +36,7 @@ export default function MHeader(props: TMHeader) {
         <View style={MHeaderStyles(props).leftContainer}>
           {left === 'goBack' ? (
             <TouchableOpacity onPress={leftPress}>
-              <MIcon iconName="chevronLeft" />
+              <MIcon iconName="arrow-left-outline" />
             </TouchableOpacity>
           ) : (
             <TouchableOpacity onPress={leftPress}>{left}</TouchableOpacity>

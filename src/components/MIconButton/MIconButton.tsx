@@ -22,17 +22,24 @@ export interface TMIconButton {
   size?: MIconButtonSize;
   onPress?: () => void;
   styles?: ViewStyle;
+  disabled?: boolean;
 }
 
 export default function MIconButton(props: TMIconButton) {
-  const {iconName, iconColor, onPress} = props;
+  const {iconName, type, iconColor, onPress, disabled} = props;
 
   return (
     <TouchableOpacity
+      disabled={disabled}
       onPress={onPress}
       style={MIconButtonStyles(props).container}
     >
-      {GetIcon({iconName, iconColor})}
+      {GetIcon({
+        iconName,
+        iconColor,
+        component: type === MIconButtonVariations.Primary ? 'button' : 'icon',
+        disabled,
+      })}
     </TouchableOpacity>
   );
 }

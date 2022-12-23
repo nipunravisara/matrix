@@ -4,28 +4,120 @@ import {MIcon, MSheet, MText} from '../../../../';
 
 interface TIcons {
   name: string;
-  title: string;
 }
 
 const icons: TIcons[] = [
   {
-    name: 'arrowExpand',
-    title: 'Arrow expand',
+    name: 'eye-outline',
   },
   {
-    name: 'chevronLeft',
-    title: 'Chevron left',
+    name: 'eye-bold',
+  },
+  {
+    name: 'eye-bulk',
+  },
+  {
+    name: 'eye-twotone',
+  },
+  {
+    name: 'eye-slash-outline',
+  },
+  {
+    name: 'eye-slash-bold',
+  },
+  {
+    name: 'eye-slash-bulk',
+  },
+  {
+    name: 'eye-slash-twotone',
+  },
+  {
+    name: 'arrow-left-outline',
+  },
+  {
+    name: 'arrow-left-bold',
+  },
+  {
+    name: 'arrow-left-bulk',
+  },
+  {
+    name: 'arrow-left-twotone',
+  },
+  {
+    name: 'microphone-two-outline',
+  },
+  {
+    name: 'microphone-two-bold',
+  },
+  {
+    name: 'microphone-two-bulk',
+  },
+  {
+    name: 'microphone-two-twotone',
+  },
+  {
+    name: 'pause-outline',
+  },
+  {
+    name: 'pause-bold',
+  },
+  {
+    name: 'pause-bulk',
+  },
+  {
+    name: 'pause-twotone',
+  },
+  {
+    name: 'stop-outline',
+  },
+  {
+    name: 'stop-bold',
+  },
+  {
+    name: 'stop-bulk',
+  },
+  {
+    name: 'stop-twotone',
+  },
+  {
+    name: 'music-playlist-outline',
+  },
+  {
+    name: 'music-playlist-bold',
+  },
+  {
+    name: 'music-playlist-bulk',
+  },
+  {
+    name: 'music-playlist-twotone',
+  },
+  {
+    name: 'play-outline',
+  },
+  {
+    name: 'play-bold',
+  },
+  {
+    name: 'play-bulk',
+  },
+  {
+    name: 'play-twotone',
   },
 ];
 
 const RenderItem = ({item}: {item: TIcons}) => {
   return (
     <TouchableOpacity
-      style={{flexDirection: 'row', alignItems: 'center', marginVertical: 10}}
+      style={{
+        marginHorizontal: 20,
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: 10,
+      }}
     >
-      <MIcon iconName={item.name} styles={{padding: 5}} />
-      <View style={{marginLeft: 20}}>
-        <MText content={item.title} />
+      <MIcon iconName={item.name} />
+      <View style={{marginLeft: 10}}>
+        <MText content={item.name} />
       </View>
     </TouchableOpacity>
   );
@@ -33,7 +125,7 @@ const RenderItem = ({item}: {item: TIcons}) => {
 
 export default function IconShowcase() {
   return (
-    <MSheet styles={{marginTop: 25}}>
+    <MSheet>
       <FlatList<TIcons> data={icons} renderItem={RenderItem} />
     </MSheet>
   );

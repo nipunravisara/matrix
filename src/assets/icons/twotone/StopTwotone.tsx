@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, {SvgProps, Path} from 'react-native-svg';
 
-const ChevronLeft = (
+const StopTwotone = (
   props: SvgProps & {
     xmlns?: string;
     xmlnsXlink?: string;
@@ -15,10 +15,13 @@ const ChevronLeft = (
     {...props}
   >
     <Path
-      d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"
-      fill={props.color}
+      d="M9.3 21h5.4c4.5 0 6.3-1.8 6.3-6.3V9.3C21 4.8 19.2 3 14.7 3H9.3C4.8 3 3 4.8 3 9.3v5.4C3 19.2 4.8 21 9.3 21Z"
+      stroke={props.color}
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );
 
-export default ChevronLeft;
+export default StopTwotone;

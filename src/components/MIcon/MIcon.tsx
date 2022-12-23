@@ -14,7 +14,7 @@ export default function MIcon(props: TMIcon) {
 
   return (
     <View style={[{alignSelf: 'flex-start'}, styles]}>
-      {GetIcon({iconName, color})}
+      {GetIcon({iconName, iconColor: color})}
     </View>
   );
 }
