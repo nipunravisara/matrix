@@ -1,4 +1,4 @@
-import {ColorValue, StyleSheet} from 'react-native';
+import {ColorValue, Platform, StyleSheet} from 'react-native';
 import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 import type {TMListItem} from './MListItem';
@@ -21,16 +21,17 @@ export const MListItemStyles = ({divider, styles}: TMListItem) => {
   const {isDark, colors} = useTheme();
 
   const containerStyles = {
+    borderBottomColor: getBorderBottomColor(isDark, colors, divider),
     backgroundColor: isDark
       ? (colors.ColorSurfaceInversePrimary as ColorValue)
       : (colors.ColorSurfacePrimary as ColorValue),
-    borderBottomColor: getBorderBottomColor(isDark, colors, divider),
   };
 
   return StyleSheet.create({
     container: {
       flexDirection: 'row',
-      borderBottomWidth: 0.2,
+      paddingVertical: 5,
+      borderBottomWidth: 0.5,
       ...containerStyles,
       ...styles,
     },
