@@ -58,6 +58,11 @@ const components = [
     image: '',
     screenName: 'ModalShowcase',
   },
+  {
+    name: 'Divider',
+    image: '',
+    screenName: 'DividerShowcase',
+  },
 ];
 
 export default function Showcase(props: TShowcase) {
