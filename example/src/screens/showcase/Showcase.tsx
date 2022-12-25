@@ -53,6 +53,11 @@ const components = [
     image: '',
     screenName: 'ListItemShowcase',
   },
+  {
+    name: 'Modal',
+    image: '',
+    screenName: 'ModalShowcase',
+  },
 ];
 
 export default function Showcase(props: TShowcase) {

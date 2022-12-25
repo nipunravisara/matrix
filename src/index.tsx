@@ -27,6 +27,7 @@ import MTextInput, {
   MTextInputStateVariations,
 } from './components/MTextInput/MTextInput';
 import MListItem, {TMListItem} from './components/MListItem/MListItem';
+import MModal, {TMModal} from './components/MModal/MModal';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
@@ -52,3 +53,5 @@ export {MTextInput, MTextInputStateVariations};
 export type {TMTextInput};
 export {MListItem};
 export type {TMListItem};
+export {MModal};
+export type {TMModal};

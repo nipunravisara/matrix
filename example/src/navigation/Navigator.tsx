@@ -12,6 +12,7 @@ import Showcase from '../screens/showcase/Showcase';
 import TextInputShowcase from '../screens/showcase/TextInputShowcase';
 import IconButtonShowcase from '../screens/showcase/IconButtonShowcase';
 import ListItemShowcase from '../screens/showcase/ListItemShowcase';
+import ModalShowcase from '../screens/showcase/ModalShowcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -29,6 +30,7 @@ export type RootStackParamList = {
   HeaderShowcase: undefined;
   TextInputShowcase: undefined;
   ListItemShowcase: undefined;
+  ModalShowcase: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -54,6 +56,7 @@ export default function Navigator({
       <Stack.Screen name="HeaderShowcase" component={HeaderShowcase} />
       <Stack.Screen name="TextInputShowcase" component={TextInputShowcase} />
       <Stack.Screen name="ListItemShowcase" component={ListItemShowcase} />
+      <Stack.Screen name="ModalShowcase" component={ModalShowcase} />
     </Stack.Navigator>
   );
 }
