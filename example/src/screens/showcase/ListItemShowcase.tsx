@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {MIconButton, MListItem, MSheet, MText} from '../../../../';
+import {View} from 'react-native';
+import {MIconButton, MListItem, MSheet} from '../../../../';
 
 export default function ListItemShowcase() {
   return (

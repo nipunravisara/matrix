@@ -1,6 +1,6 @@
 import React from 'react';
 import {MHeader, MLabel} from '../../../../';
-import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, View} from 'react-native';
 
 export default function HeaderShowcase() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, SafeAreaView, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import {MHeader, MSheet} from '../../../../';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
