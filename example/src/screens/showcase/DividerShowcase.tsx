@@ -4,7 +4,7 @@ import {MDivider, MDividerVariations, MSheet, MText} from '../../../../';
 
 export default function DividerShowcase() {
   return (
-    <MSheet styles={{marginTop: 20}}>
+    <MSheet styles={{paddingTop: 20}}>
       <View>
         <MDivider type={MDividerVariations.Liner} />
         <MText content="Liner" />
