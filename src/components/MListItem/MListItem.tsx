@@ -11,10 +11,11 @@ export interface TMListItem {
   prefix?: JSX.Element;
   styles?: ViewStyle;
   divider?: boolean;
+  options?: JSX.Element[];
 }
 
 export default function MListItem(props: TMListItem) {
-  const {title, subtitle, caption, prefix} = props;
+  const {title, subtitle, caption, options, prefix} = props;
 
   return (
     <View style={MListItemStyles(props).container}>
@@ -22,12 +23,15 @@ export default function MListItem(props: TMListItem) {
       <View style={MListItemStyles(props).cardContentContainer}>
         <View style={MListItemStyles(props).cardTitleContainer}>
           <MLabel content={title} type={MLabelVariations.l2} />
-          <MText content={caption as string} type={MTextVariant.p4} />
+          {!options && (
+            <MText content={caption as string} type={MTextVariant.p4} />
+          )}
         </View>
         <View>
           <MText content={subtitle as string} type={MTextVariant.p4} />
         </View>
       </View>
+      {options && options.map((option: JSX.Element) => option)}
     </View>
   );
 }
