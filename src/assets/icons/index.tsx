@@ -1,3 +1,13 @@
+import DirectboxSendOutline from './outline/DirectboxSendOutline';
+import DirectboxSendBold from './bold/DirectboxSendBold';
+import DirectboxSendBulk from './bulk/DirectboxSendBulk';
+import DirectboxSendTwotone from './twotone/DirectboxSendTwotone';
+
+import TrashOutline from './outline/TrashOutline';
+import TrashBold from './bold/TrashBold';
+import TrashBulk from './bulk/TrashBulk';
+import TrashTwotone from './twotone/TrashTwotone';
+
 import PlayOutline from './outline/PlayOutline';
 import PlayBold from './bold/PlayBold';
 import PlayBulk from './bulk/PlayBulk';
@@ -39,6 +49,14 @@ import EyeBulk from './bulk/EyeBulk';
 import EyeTwotone from './twotone/EyeTwotone';
 
 export {
+  DirectboxSendOutline,
+  DirectboxSendBold,
+  DirectboxSendBulk,
+  DirectboxSendTwotone,
+  TrashOutline,
+  TrashBold,
+  TrashBulk,
+  TrashTwotone,
   PlayOutline,
   PlayBold,
   PlayBulk,
