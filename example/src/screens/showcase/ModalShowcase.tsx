@@ -10,7 +10,7 @@ import {
 } from '../../../../';
 
 export default function ModalShowcase() {
-  const [modalVisible, setModalVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <MSheet styles={{marginTop: 20}}>

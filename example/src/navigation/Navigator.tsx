@@ -13,6 +13,7 @@ import TextInputShowcase from '../screens/showcase/TextInputShowcase';
 import IconButtonShowcase from '../screens/showcase/IconButtonShowcase';
 import ListItemShowcase from '../screens/showcase/ListItemShowcase';
 import ModalShowcase from '../screens/showcase/ModalShowcase';
+import DividerShowcase from '../screens/showcase/DividerShowcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -31,6 +32,7 @@ export type RootStackParamList = {
   TextInputShowcase: undefined;
   ListItemShowcase: undefined;
   ModalShowcase: undefined;
+  DividerShowcase: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -57,6 +59,7 @@ export default function Navigator({
       <Stack.Screen name="TextInputShowcase" component={TextInputShowcase} />
       <Stack.Screen name="ListItemShowcase" component={ListItemShowcase} />
       <Stack.Screen name="ModalShowcase" component={ModalShowcase} />
+      <Stack.Screen name="DividerShowcase" component={DividerShowcase} />
     </Stack.Navigator>
   );
 }

@@ -28,6 +28,10 @@ import MTextInput, {
 } from './components/MTextInput/MTextInput';
 import MListItem, {TMListItem} from './components/MListItem/MListItem';
 import MModal, {TMModal} from './components/MModal/MModal';
+import MDivider, {
+  TMDivider,
+  MDividerVariations,
+} from './components/MDivider/MDivider';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
@@ -55,3 +59,5 @@ export {MListItem};
 export type {TMListItem};
 export {MModal};
 export type {TMModal};
+export type {TMDivider};
+export {MDivider, MDividerVariations};
