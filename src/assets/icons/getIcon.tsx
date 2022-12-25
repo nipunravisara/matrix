@@ -1,5 +1,13 @@
 import React from 'react';
 import {
+  DirectboxSendOutline,
+  DirectboxSendBold,
+  DirectboxSendBulk,
+  DirectboxSendTwotone,
+  TrashOutline,
+  TrashBold,
+  TrashBulk,
+  TrashTwotone,
   PlayOutline,
   PlayBold,
   PlayBulk,
@@ -65,6 +73,56 @@ export const GetIcon = (props: TGetIcon): JSX.Element => {
   const {iconName, iconColor, component, disabled} = props;
 
   switch (iconName) {
+    case 'directbox-send-outline':
+      return (
+        <DirectboxSendOutline
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'directbox-send-bold':
+      return (
+        <DirectboxSendBold
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'directbox-send-bulk':
+      return (
+        <DirectboxSendBulk
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'directbox-send-twotone':
+      return (
+        <DirectboxSendTwotone
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+
+    case 'trash-outline':
+      return (
+        <TrashOutline
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'trash-bold':
+      return (
+        <TrashBold
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'trash-bulk':
+      return (
+        <TrashBulk
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'trash-twotone':
+      return (
+        <TrashTwotone
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+
     case 'play-outline':
       return (
         <PlayOutline

@@ -103,6 +103,32 @@ const icons: TIcons[] = [
   {
     name: 'play-twotone',
   },
+
+  {
+    name: 'trash-outline',
+  },
+  {
+    name: 'trash-bold',
+  },
+  {
+    name: 'trash-bulk',
+  },
+  {
+    name: 'trash-twotone',
+  },
+
+  {
+    name: 'directbox-send-outline',
+  },
+  {
+    name: 'directbox-send-bold',
+  },
+  {
+    name: 'directbox-send-bulk',
+  },
+  {
+    name: 'directbox-send-twotone',
+  },
 ];
 
 const RenderItem = ({item}: {item: TIcons}) => {
