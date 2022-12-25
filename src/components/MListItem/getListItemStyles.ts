@@ -1,4 +1,4 @@
-import {ColorValue, Platform, StyleSheet} from 'react-native';
+import {ColorValue, StyleSheet} from 'react-native';
 import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
 import type {TMListItem} from './MListItem';
@@ -17,10 +17,18 @@ function getBorderBottomColor(
   }
 }
 
-export const MListItemStyles = ({divider, styles}: TMListItem) => {
+export const MListItemStyles = ({
+  prefix,
+  divider,
+  options,
+  styles,
+}: TMListItem) => {
   const {isDark, colors} = useTheme();
 
   const containerStyles = {
+    height: 82,
+    paddingLeft: prefix ? 0 : 16,
+    paddingRight: (options?.length as number) >= 0 ? 0 : 16,
     borderBottomColor: getBorderBottomColor(isDark, colors, divider),
     backgroundColor: isDark
       ? (colors.ColorSurfaceInversePrimary as ColorValue)
@@ -30,15 +38,15 @@ export const MListItemStyles = ({divider, styles}: TMListItem) => {
   return StyleSheet.create({
     container: {
       flexDirection: 'row',
-      paddingVertical: 5,
+      alignItems: 'center',
+      justifyContent: 'center',
       borderBottomWidth: 0.5,
       ...containerStyles,
       ...styles,
     },
     cardContentContainer: {
-      justifyContent: 'center',
       flex: 1,
-      paddingRight: 18,
+      justifyContent: 'center',
     },
     cardTitleContainer: {
       flexDirection: 'row',
