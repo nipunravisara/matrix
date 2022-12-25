@@ -2,7 +2,7 @@
 import ThemeProvider, {TThemeProvider} from './theme/ThemeProvider';
 import useTheme from './theme/useTheme';
 import type {TTheme} from './theme/theme';
-
+import {hexToRgb} from './utils/getHexToRgb';
 // utils
 import {getFontVariation} from './utils/getFontWeight';
 
@@ -35,6 +35,7 @@ import MDivider, {
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
+export {hexToRgb};
 
 export {getFontVariation};
 

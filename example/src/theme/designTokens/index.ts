@@ -1,18 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Sun, 09 Oct 2022 16:52:50 GMT
+ * Generated on Sun, 25 Dec 2022 11:31:25 GMT
  */
 
-export const ColorBaseGrayLight = '#cccccc';
-export const ColorBaseGrayMedium = '#999999';
-export const ColorBaseGrayDark = '#111111';
-export const ColorBaseRed = '#ff0000';
-export const ColorBaseGreen = '#00ff00';
 export const ColorPrimaryPrimaryColor = '#4840ee';
 export const ColorPrimarySuccess = '#00a520';
 export const ColorPrimaryWarning = '#e6353d';
-export const ColorPrimaryInformation = '#064ff3';
 export const ColorPrimaryAlert = '#ffb201';
+export const ColorPrimaryInformation = '#064ff3';
 export const ColorStateResting = '#616161';
 export const ColorStateActive = '#4840ee';
 export const ColorStateDisabled = '#9e9e9e';
@@ -37,7 +32,10 @@ export const ColorSurfaceBlue50 = '#e9ecff';
 export const ColorSurfacePrimary50 = '#eee9fe';
 export const ColorSurfaceNeutral500 = '#9e9e9e';
 export const ColorBorderBorderPrimary = '#bdbdbd';
-export const ColorBorderBorderSecondary = '#F4F4F4';
+export const ColorBorderBorderSecondary = '#f4f4f4';
+export const ColorBorderBorderInversePrimary = '#303030';
+export const ColorBorderBorderInverseSecondary = '#1d1d1d';
+export const ColorOverlayOverlay = '#333147';
 export const ColorAllPrimaryPrimary900 = '#0026d6';
 export const ColorAllPrimaryPrimary800 = '#0032df';
 export const ColorAllPrimaryPrimary700 = '#2e38e5';
@@ -100,27 +98,6 @@ export const ColorAllYellowYellow100 = '#ffecb3';
 export const ColorAllYellowYellow50 = '#fff8e1';
 export const ColorAllBaseBlack = '#000000';
 export const ColorAllBaseWhite = '#ffffff';
-export const FontFamiliesInter = 'Inter';
-export const FontWeightsInter0 = 'Regular';
-export const FontSize10 = '72';
-export const Display2xlRegularFontFamily = 'Inter';
-export const Display2xlRegularFontWeight = 'Regular';
-export const Display2xlRegularFontSize = '72';
-export const Grid4GridHorizintalGridSystem = {
-  pattern: 'columns',
-  gutterSize: 16,
-  alignment: 'stretch',
-  count: 4,
-  offset: 16,
-};
-export const Grid4pxVerticalGridSystem = {
-  pattern: 'rows',
-  sectionSize: 4,
-  gutterSize: 4,
-  alignment: 'min',
-  count: 1000,
-  offset: 4,
-};
 export const FontHeadingHeading1 = {
   fontSize: 36,
   textDecoration: 'none',

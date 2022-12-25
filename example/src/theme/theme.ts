@@ -63,13 +63,11 @@ import {
   ColorAllYellowYellow700,
   ColorAllYellowYellow800,
   ColorAllYellowYellow900,
-  ColorBaseGrayDark,
-  ColorBaseGrayLight,
-  ColorBaseGrayMedium,
-  ColorBaseGreen,
-  ColorBaseRed,
   ColorBorderBorderPrimary,
   ColorBorderBorderSecondary,
+  ColorBorderBorderInversePrimary,
+  ColorBorderBorderInverseSecondary,
+  ColorOverlayOverlay,
   ColorPrimaryAlert,
   ColorPrimaryInformation,
   ColorPrimaryPrimaryColor,
@@ -179,12 +177,6 @@ const theme: TTheme = {
   isDark: false,
   roundness: 0,
   colors: {
-    ColorBaseGrayLight: ColorBaseGrayLight,
-    ColorBaseGrayMedium: ColorBaseGrayMedium,
-    ColorBaseGrayDark: ColorBaseGrayDark,
-
-    ColorBaseRed: ColorBaseRed,
-    ColorBaseGreen: ColorBaseGreen,
     ColorPrimaryPrimaryColor: ColorPrimaryPrimaryColor,
     ColorPrimarySuccess: ColorPrimarySuccess,
     ColorPrimaryWarning: ColorPrimaryWarning,
@@ -217,8 +209,13 @@ const theme: TTheme = {
     ColorSurfaceBlue50: ColorSurfaceBlue50,
     ColorSurfacePrimary50: ColorSurfacePrimary50,
     ColorSurfaceNeutral500: ColorSurfaceNeutral500,
+
     ColorBorderBorderPrimary: ColorBorderBorderPrimary,
     ColorBorderBorderSecondary: ColorBorderBorderSecondary,
+    ColorBorderBorderInversePrimary: ColorBorderBorderInversePrimary,
+    ColorBorderBorderInverseSecondary: ColorBorderBorderInverseSecondary,
+
+    ColorOverlayOverlay: ColorOverlayOverlay,
 
     ColorAllPrimaryPrimary900: ColorAllPrimaryPrimary900,
     ColorAllPrimaryPrimary800: ColorAllPrimaryPrimary800,
