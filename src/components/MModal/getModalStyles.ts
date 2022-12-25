@@ -1,5 +1,5 @@
 import {ColorValue, StyleSheet} from 'react-native';
-import useTheme from '../../theme/useTheme';
+import {hexToRgb, useTheme} from '../..';
 import type {TMModal} from './MModal';
 
 export const MModalStyles = (props: TMModal) => {
@@ -18,8 +18,7 @@ export const MModalStyles = (props: TMModal) => {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#2B2B2B',
-      opacity: 2,
+      backgroundColor: hexToRgb(colors.ColorOverlayOverlay, 0.5),
     },
     modalView: {
       margin: 40,

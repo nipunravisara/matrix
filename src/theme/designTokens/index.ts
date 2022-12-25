@@ -1,18 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Sun, 09 Oct 2022 16:52:50 GMT
+ * Generated on Sun, 25 Dec 2022 11:31:25 GMT
  */
 
-export const ColorBaseGrayLight = '#cccccc';
-export const ColorBaseGrayMedium = '#999999';
-export const ColorBaseGrayDark = '#111111';
-export const ColorBaseRed = '#ff0000';
-export const ColorBaseGreen = '#00ff00';
 export const ColorPrimaryPrimaryColor = '#4840ee';
 export const ColorPrimarySuccess = '#00a520';
 export const ColorPrimaryWarning = '#e6353d';
-export const ColorPrimaryInformation = '#064ff3';
 export const ColorPrimaryAlert = '#ffb201';
+export const ColorPrimaryInformation = '#064ff3';
 export const ColorStateResting = '#616161';
 export const ColorStateActive = '#4840ee';
 export const ColorStateDisabled = '#9e9e9e';
@@ -37,7 +32,10 @@ export const ColorSurfaceBlue50 = '#e9ecff';
 export const ColorSurfacePrimary50 = '#eee9fe';
 export const ColorSurfaceNeutral500 = '#9e9e9e';
 export const ColorBorderBorderPrimary = '#bdbdbd';
-export const ColorBorderBorderSecondary = '#F4F4F4';
+export const ColorBorderBorderSecondary = '#f4f4f4';
+export const ColorBorderBorderInversePrimary = '#656565';
+export const ColorBorderBorderInverseSecondary = '#1d1d1d';
+export const ColorOverlayOverlay = '#333147';
 export const ColorAllPrimaryPrimary900 = '#0026d6';
 export const ColorAllPrimaryPrimary800 = '#0032df';
 export const ColorAllPrimaryPrimary700 = '#2e38e5';
@@ -100,31 +98,10 @@ export const ColorAllYellowYellow100 = '#ffecb3';
 export const ColorAllYellowYellow50 = '#fff8e1';
 export const ColorAllBaseBlack = '#000000';
 export const ColorAllBaseWhite = '#ffffff';
-export const FontFamiliesInter = 'Inter';
-export const FontWeightsInter0 = 'Regular';
-export const FontSize10 = '72';
-export const Display2xlRegularFontFamily = 'Inter';
-export const Display2xlRegularFontWeight = 'Regular';
-export const Display2xlRegularFontSize = '72';
-export const Grid4GridHorizintalGridSystem = {
-  pattern: 'columns',
-  gutterSize: 16,
-  alignment: 'stretch',
-  count: 4,
-  offset: 16,
-};
-export const Grid4pxVerticalGridSystem = {
-  pattern: 'rows',
-  sectionSize: 4,
-  gutterSize: 4,
-  alignment: 'min',
-  count: 1000,
-  offset: 4,
-};
 export const FontHeadingHeading1 = {
   fontSize: 36,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 600,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -137,7 +114,7 @@ export const FontHeadingHeading1 = {
 export const FontHeadingHeading2 = {
   fontSize: 32,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 600,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -150,7 +127,7 @@ export const FontHeadingHeading2 = {
 export const FontHeadingHeading3 = {
   fontSize: 28,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 600,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -163,7 +140,7 @@ export const FontHeadingHeading3 = {
 export const FontHeadingHeading4 = {
   fontSize: 24,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 600,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -176,7 +153,7 @@ export const FontHeadingHeading4 = {
 export const FontHeadingHeading5 = {
   fontSize: 20,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 600,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -189,7 +166,7 @@ export const FontHeadingHeading5 = {
 export const FontParagraphParagraph1 = {
   fontSize: 18,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 400,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -202,7 +179,7 @@ export const FontParagraphParagraph1 = {
 export const FontParagraphParagraph2 = {
   fontSize: 16,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 400,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -215,7 +192,7 @@ export const FontParagraphParagraph2 = {
 export const FontParagraphParagraph3 = {
   fontSize: 14,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 400,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -228,7 +205,7 @@ export const FontParagraphParagraph3 = {
 export const FontParagraphParagraph4 = {
   fontSize: 12,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 400,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -241,7 +218,7 @@ export const FontParagraphParagraph4 = {
 export const FontParagraphParagraph5 = {
   fontSize: 10,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 400,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -254,7 +231,7 @@ export const FontParagraphParagraph5 = {
 export const FontLabelLabel1 = {
   fontSize: 18,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 500,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -267,7 +244,7 @@ export const FontLabelLabel1 = {
 export const FontLabelLabel2 = {
   fontSize: 16,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 500,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -280,7 +257,7 @@ export const FontLabelLabel2 = {
 export const FontLabelLabel3 = {
   fontSize: 14,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 500,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -293,7 +270,7 @@ export const FontLabelLabel3 = {
 export const FontLabelLabel4 = {
   fontSize: 12,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 500,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -306,7 +283,7 @@ export const FontLabelLabel4 = {
 export const FontLabelLabel5 = {
   fontSize: 10,
   textDecoration: 'none',
-  fontFamily: 'Arial',
+  fontFamily: 'Outfit',
   fontWeight: 500,
   fontStyle: 'normal',
   fontStretch: 'normal',
@@ -318,7 +295,7 @@ export const FontLabelLabel5 = {
 };
 export const TypographyHeadingHeading1FontSize = 36;
 export const TypographyHeadingHeading1TextDecoration = 'none';
-export const TypographyHeadingHeading1FontFamily = 'Arial';
+export const TypographyHeadingHeading1FontFamily = 'Outfit';
 export const TypographyHeadingHeading1FontWeight = 600;
 export const TypographyHeadingHeading1FontStyle = 'normal';
 export const TypographyHeadingHeading1FontStretch = 'normal';
@@ -329,7 +306,7 @@ export const TypographyHeadingHeading1ParagraphSpacing = 0;
 export const TypographyHeadingHeading1TextCase = 'none';
 export const TypographyHeadingHeading2FontSize = 32;
 export const TypographyHeadingHeading2TextDecoration = 'none';
-export const TypographyHeadingHeading2FontFamily = 'Arial';
+export const TypographyHeadingHeading2FontFamily = 'Outfit';
 export const TypographyHeadingHeading2FontWeight = 600;
 export const TypographyHeadingHeading2FontStyle = 'normal';
 export const TypographyHeadingHeading2FontStretch = 'normal';
@@ -340,7 +317,7 @@ export const TypographyHeadingHeading2ParagraphSpacing = 0;
 export const TypographyHeadingHeading2TextCase = 'none';
 export const TypographyHeadingHeading3FontSize = 28;
 export const TypographyHeadingHeading3TextDecoration = 'none';
-export const TypographyHeadingHeading3FontFamily = 'Arial';
+export const TypographyHeadingHeading3FontFamily = 'Outfit';
 export const TypographyHeadingHeading3FontWeight = 600;
 export const TypographyHeadingHeading3FontStyle = 'normal';
 export const TypographyHeadingHeading3FontStretch = 'normal';
@@ -351,7 +328,7 @@ export const TypographyHeadingHeading3ParagraphSpacing = 0;
 export const TypographyHeadingHeading3TextCase = 'none';
 export const TypographyHeadingHeading4FontSize = 24;
 export const TypographyHeadingHeading4TextDecoration = 'none';
-export const TypographyHeadingHeading4FontFamily = 'Arial';
+export const TypographyHeadingHeading4FontFamily = 'Outfit';
 export const TypographyHeadingHeading4FontWeight = 600;
 export const TypographyHeadingHeading4FontStyle = 'normal';
 export const TypographyHeadingHeading4FontStretch = 'normal';
@@ -362,7 +339,7 @@ export const TypographyHeadingHeading4ParagraphSpacing = 0;
 export const TypographyHeadingHeading4TextCase = 'none';
 export const TypographyHeadingHeading5FontSize = 20;
 export const TypographyHeadingHeading5TextDecoration = 'none';
-export const TypographyHeadingHeading5FontFamily = 'Arial';
+export const TypographyHeadingHeading5FontFamily = 'Outfit';
 export const TypographyHeadingHeading5FontWeight = 600;
 export const TypographyHeadingHeading5FontStyle = 'normal';
 export const TypographyHeadingHeading5FontStretch = 'normal';
@@ -373,7 +350,7 @@ export const TypographyHeadingHeading5ParagraphSpacing = 0;
 export const TypographyHeadingHeading5TextCase = 'none';
 export const TypographyParagraphParagraph1FontSize = 18;
 export const TypographyParagraphParagraph1TextDecoration = 'none';
-export const TypographyParagraphParagraph1FontFamily = 'Arial';
+export const TypographyParagraphParagraph1FontFamily = 'Outfit';
 export const TypographyParagraphParagraph1FontWeight = 400;
 export const TypographyParagraphParagraph1FontStyle = 'normal';
 export const TypographyParagraphParagraph1FontStretch = 'normal';
@@ -384,7 +361,7 @@ export const TypographyParagraphParagraph1ParagraphSpacing = 0;
 export const TypographyParagraphParagraph1TextCase = 'none';
 export const TypographyParagraphParagraph2FontSize = 16;
 export const TypographyParagraphParagraph2TextDecoration = 'none';
-export const TypographyParagraphParagraph2FontFamily = 'Arial';
+export const TypographyParagraphParagraph2FontFamily = 'Outfit';
 export const TypographyParagraphParagraph2FontWeight = 400;
 export const TypographyParagraphParagraph2FontStyle = 'normal';
 export const TypographyParagraphParagraph2FontStretch = 'normal';
@@ -395,7 +372,7 @@ export const TypographyParagraphParagraph2ParagraphSpacing = 0;
 export const TypographyParagraphParagraph2TextCase = 'none';
 export const TypographyParagraphParagraph3FontSize = 14;
 export const TypographyParagraphParagraph3TextDecoration = 'none';
-export const TypographyParagraphParagraph3FontFamily = 'Arial';
+export const TypographyParagraphParagraph3FontFamily = 'Outfit';
 export const TypographyParagraphParagraph3FontWeight = 400;
 export const TypographyParagraphParagraph3FontStyle = 'normal';
 export const TypographyParagraphParagraph3FontStretch = 'normal';
@@ -406,7 +383,7 @@ export const TypographyParagraphParagraph3ParagraphSpacing = 0;
 export const TypographyParagraphParagraph3TextCase = 'none';
 export const TypographyParagraphParagraph4FontSize = 12;
 export const TypographyParagraphParagraph4TextDecoration = 'none';
-export const TypographyParagraphParagraph4FontFamily = 'Arial';
+export const TypographyParagraphParagraph4FontFamily = 'Outfit';
 export const TypographyParagraphParagraph4FontWeight = 400;
 export const TypographyParagraphParagraph4FontStyle = 'normal';
 export const TypographyParagraphParagraph4FontStretch = 'normal';
@@ -417,7 +394,7 @@ export const TypographyParagraphParagraph4ParagraphSpacing = 0;
 export const TypographyParagraphParagraph4TextCase = 'none';
 export const TypographyParagraphParagraph5FontSize = 10;
 export const TypographyParagraphParagraph5TextDecoration = 'none';
-export const TypographyParagraphParagraph5FontFamily = 'Arial';
+export const TypographyParagraphParagraph5FontFamily = 'Outfit';
 export const TypographyParagraphParagraph5FontWeight = 400;
 export const TypographyParagraphParagraph5FontStyle = 'normal';
 export const TypographyParagraphParagraph5FontStretch = 'normal';
@@ -428,7 +405,7 @@ export const TypographyParagraphParagraph5ParagraphSpacing = 0;
 export const TypographyParagraphParagraph5TextCase = 'none';
 export const TypographyLabelLabel1FontSize = 18;
 export const TypographyLabelLabel1TextDecoration = 'none';
-export const TypographyLabelLabel1FontFamily = 'Arial';
+export const TypographyLabelLabel1FontFamily = 'Outfit';
 export const TypographyLabelLabel1FontWeight = 500;
 export const TypographyLabelLabel1FontStyle = 'normal';
 export const TypographyLabelLabel1FontStretch = 'normal';
@@ -439,7 +416,7 @@ export const TypographyLabelLabel1ParagraphSpacing = 0;
 export const TypographyLabelLabel1TextCase = 'none';
 export const TypographyLabelLabel2FontSize = 16;
 export const TypographyLabelLabel2TextDecoration = 'none';
-export const TypographyLabelLabel2FontFamily = 'Arial';
+export const TypographyLabelLabel2FontFamily = 'Outfit';
 export const TypographyLabelLabel2FontWeight = 500;
 export const TypographyLabelLabel2FontStyle = 'normal';
 export const TypographyLabelLabel2FontStretch = 'normal';
@@ -450,7 +427,7 @@ export const TypographyLabelLabel2ParagraphSpacing = 0;
 export const TypographyLabelLabel2TextCase = 'none';
 export const TypographyLabelLabel3FontSize = 14;
 export const TypographyLabelLabel3TextDecoration = 'none';
-export const TypographyLabelLabel3FontFamily = 'Arial';
+export const TypographyLabelLabel3FontFamily = 'Outfit';
 export const TypographyLabelLabel3FontWeight = 500;
 export const TypographyLabelLabel3FontStyle = 'normal';
 export const TypographyLabelLabel3FontStretch = 'normal';
@@ -461,7 +438,7 @@ export const TypographyLabelLabel3ParagraphSpacing = 0;
 export const TypographyLabelLabel3TextCase = 'none';
 export const TypographyLabelLabel4FontSize = 12;
 export const TypographyLabelLabel4TextDecoration = 'none';
-export const TypographyLabelLabel4FontFamily = 'Arial';
+export const TypographyLabelLabel4FontFamily = 'Outfit';
 export const TypographyLabelLabel4FontWeight = 500;
 export const TypographyLabelLabel4FontStyle = 'normal';
 export const TypographyLabelLabel4FontStretch = 'normal';
@@ -472,7 +449,7 @@ export const TypographyLabelLabel4ParagraphSpacing = 0;
 export const TypographyLabelLabel4TextCase = 'none';
 export const TypographyLabelLabel5FontSize = 10;
 export const TypographyLabelLabel5TextDecoration = 'none';
-export const TypographyLabelLabel5FontFamily = 'Arial';
+export const TypographyLabelLabel5FontFamily = 'Outfit';
 export const TypographyLabelLabel5FontWeight = 500;
 export const TypographyLabelLabel5FontStyle = 'normal';
 export const TypographyLabelLabel5FontStretch = 'normal';
