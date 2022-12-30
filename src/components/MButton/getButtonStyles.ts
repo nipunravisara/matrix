@@ -14,7 +14,7 @@ function getButtonColor(
 
   switch (type) {
     case MButtonVariations.primary:
-      return colors.colors.ColorAllBlueBlue600;
+      return colors.colors.ColorPrimaryPrimaryColor;
     case MButtonVariations.secondary:
       return colors.colors.ColorStatePressed50;
     case MButtonVariations.ternary:
@@ -30,13 +30,13 @@ function getButtonPressedColor(
 ): string {
   switch (type) {
     case MButtonVariations.primary:
-      return colors.colors.ColorAllBlueBlue900;
+      return colors.colors.ColorStatePressed700;
     case MButtonVariations.secondary:
-      return colors.colors.ColorAllBlueBlue900;
+      return colors.colors.ColorStatePressed700;
     case MButtonVariations.ternary:
       return `${colors.colors.ColorStatePressed50}00`;
     default:
-      return colors.colors.ColorAllBlueBlue900;
+      return colors.colors.ColorStatePressed700;
   }
 }
 
@@ -71,7 +71,7 @@ function getButtonLabelPressedColor(
     case MButtonVariations.secondary:
       return colors.colors.ColorTextInversePrimary;
     case MButtonVariations.ternary:
-      return colors.colors.ColorAllPrimaryPrimary900;
+      return colors.colors.ColorStatePressed700;
     default:
       return colors.colors.ColorTextInversePrimary;
   }
