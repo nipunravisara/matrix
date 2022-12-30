@@ -1,5 +1,4 @@
 import {getFontVariation, TTheme} from '../../../';
-
 import {
   ColorAllBaseBlack,
   ColorAllBaseWhite,

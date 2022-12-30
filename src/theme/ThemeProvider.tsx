@@ -1,6 +1,5 @@
 import React from 'react';
 import {theme as defaultTheme, TTheme} from './theme';
-import {useColorScheme} from 'react-native';
 
 interface TThemeProvider {
   theme?: TTheme;
@@ -11,13 +10,10 @@ export const ThemeContext = React.createContext(defaultTheme);
 
 const ThemeProvider = (props: TThemeProvider) => {
   const {theme, children} = props;
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
 
   const appTheme: TTheme = {
     ...defaultTheme,
     ...theme,
-    isDark,
   };
 
   return (

@@ -3,12 +3,20 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import Navigator from './navigation/Navigator';
 import theme from './theme/theme';
+import {useColorScheme} from 'react-native';
 
 import {ThemeProvider} from '../../';
 
 export default function App(): JSX.Element {
+  const colorScheme = useColorScheme();
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider
+      theme={{
+        ...theme,
+        isDark: colorScheme === 'dark' ? true : false,
+      }}
+    >
       <NavigationContainer>
         <StatusBar
           translucent
