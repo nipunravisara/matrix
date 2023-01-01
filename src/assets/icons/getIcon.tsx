@@ -40,6 +40,14 @@ import {
   EyeSlashOutline,
   EyeSlashBulk,
   EyeSlashTwotone,
+  InfoCircleOutline,
+  InfoCircleBold,
+  InfoCircleBulk,
+  InfoCircleTwotone,
+  SoundOutline,
+  SoundBold,
+  SoundBulk,
+  SoundTwotone,
 } from '../../assets/icons';
 import type {TTheme} from '../../theme/theme';
 import useTheme from '../../theme/useTheme';
@@ -73,6 +81,56 @@ export const GetIcon = (props: TGetIcon): JSX.Element => {
   const {iconName, iconColor, component, disabled} = props;
 
   switch (iconName) {
+    case 'info-circle-outline':
+      return (
+        <InfoCircleOutline
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'info-circle-bold':
+      return (
+        <InfoCircleBold
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'info-circle-bulk':
+      return (
+        <InfoCircleBulk
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'info-circle-twotone':
+      return (
+        <InfoCircleTwotone
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+
+    case 'sound-outline':
+      return (
+        <SoundOutline
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'sound-bold':
+      return (
+        <SoundBold
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'sound-bulk':
+      return (
+        <SoundBulk
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+    case 'sound-twotone':
+      return (
+        <SoundTwotone
+          color={getIconColor(iconColor, isDark, colors, component, disabled)}
+        />
+      );
+
     case 'directbox-send-outline':
       return (
         <DirectboxSendOutline

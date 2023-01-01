@@ -116,7 +116,6 @@ const icons: TIcons[] = [
   {
     name: 'trash-twotone',
   },
-
   {
     name: 'directbox-send-outline',
   },
@@ -128,6 +127,30 @@ const icons: TIcons[] = [
   },
   {
     name: 'directbox-send-twotone',
+  },
+  {
+    name: 'sound-outline',
+  },
+  {
+    name: 'sound-bold',
+  },
+  {
+    name: 'sound-bulk',
+  },
+  {
+    name: 'sound-twotone',
+  },
+  {
+    name: 'info-circle-outline',
+  },
+  {
+    name: 'info-circle-bold',
+  },
+  {
+    name: 'info-circle-bulk',
+  },
+  {
+    name: 'info-circle-twotone',
   },
 ];
 
