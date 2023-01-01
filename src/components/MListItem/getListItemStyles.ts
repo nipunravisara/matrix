@@ -9,13 +9,10 @@ function getBorderBottomColor(
   divider: Pick<TMListItem, 'divider'>['divider']
 ): string {
   if (divider && isDark) {
-    console.log(111, divider);
     return colors.ColorSurfaceInverseTertiary;
   } else if (divider && !isDark) {
-    console.log(222, divider);
     return colors.ColorBorderBorderPrimary;
   } else {
-    console.log(333, divider);
     return '#0000';
   }
 }

@@ -29,7 +29,7 @@ export default function MModal(props: TMModal) {
             type={MLabelVariations.l1}
             styles={{textAlign: 'center'}}
           />
-          <MDivider />
+          <MDivider size={8} />
           <MText
             content={description}
             type={MTextVariant.p3}

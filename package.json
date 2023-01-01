@@ -1,6 +1,6 @@
 {
   "name": "@nipunravisara/matrix",
-  "version": "1.0.1-beta.11",
+  "version": "1.0.1-beta.12",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
