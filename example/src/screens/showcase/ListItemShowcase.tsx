@@ -15,13 +15,20 @@ export default function ListItemShowcase() {
             <MIconButton key="share" iconName={'music-playlist-outline'} />,
             <MIconButton key="delete" iconName={'pause-outline'} />,
           ]}
+          divider
         />
-        <MListItem title="Title" subtitle="subtitle" caption="23.23AP" />
         <MListItem
           title="Title"
           subtitle="07:35 AM"
           caption="23.23AP"
           prefix={<MIconButton iconName={'pause-outline'} />}
+          divider
+        />
+        <MListItem
+          title="Title"
+          subtitle="subtitle"
+          caption="23.23AP"
+          onPress={() => console.log('Pressed!')}
         />
       </View>
     </MSheet>

@@ -9,11 +9,14 @@ function getBorderBottomColor(
   divider: Pick<TMListItem, 'divider'>['divider']
 ): string {
   if (divider && isDark) {
+    console.log(111, divider);
     return colors.ColorSurfaceInverseTertiary;
   } else if (divider && !isDark) {
+    console.log(222, divider);
     return colors.ColorBorderBorderPrimary;
   } else {
-    return colors.ColorBorderBorderPrimary;
+    console.log(333, divider);
+    return '#0000';
   }
 }
 
@@ -43,6 +46,9 @@ export const MListItemStyles = ({
       borderBottomWidth: 0.5,
       ...containerStyles,
       ...styles,
+    },
+    innerContainer: {
+      flexDirection: 'row',
     },
     cardContentContainer: {
       flex: 1,

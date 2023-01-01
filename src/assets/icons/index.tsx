@@ -1,3 +1,13 @@
+import InfoCircleOutline from './outline/InfoCircleOutline';
+import InfoCircleBold from './bold/InfoCircleBold';
+import InfoCircleBulk from './bulk/InfoCircleBulk';
+import InfoCircleTwotone from './twotone/InfoCircleTwotone';
+
+import SoundOutline from './outline/SoundOutline';
+import SoundBold from './bold/SoundBold';
+import SoundBulk from './bulk/SoundBulk';
+import SoundTwotone from './twotone/SoundTwotone';
+
 import DirectboxSendOutline from './outline/DirectboxSendOutline';
 import DirectboxSendBold from './bold/DirectboxSendBold';
 import DirectboxSendBulk from './bulk/DirectboxSendBulk';
@@ -49,6 +59,14 @@ import EyeBulk from './bulk/EyeBulk';
 import EyeTwotone from './twotone/EyeTwotone';
 
 export {
+  InfoCircleOutline,
+  InfoCircleBold,
+  InfoCircleBulk,
+  InfoCircleTwotone,
+  SoundOutline,
+  SoundBold,
+  SoundBulk,
+  SoundTwotone,
   DirectboxSendOutline,
   DirectboxSendBold,
   DirectboxSendBulk,
