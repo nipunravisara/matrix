@@ -174,7 +174,7 @@ const RenderItem = ({item}: {item: TIcons}) => {
 
 export default function IconShowcase() {
   return (
-    <MSheet>
+    <MSheet styles={{paddingTop: 50}}>
       <FlatList<TIcons> data={icons} renderItem={RenderItem} />
     </MSheet>
   );

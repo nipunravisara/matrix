@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import React from 'react';
-import {SafeAreaView, ScrollView, Text} from 'react-native';
-import {MButton, MTextInput} from '../../../../';
+import {ScrollView, Text} from 'react-native';
+import {MButton, MSheet, MTextInput} from '../../../../';
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -35,7 +35,7 @@ export default function TextInputShowcase() {
   const onSubmit = (data: FormTypes) => console.log(111, data);
 
   return (
-    <SafeAreaView style={{marginTop: 20, marginHorizontal: 10}}>
+    <MSheet styles={{marginTop: 20}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Text>---------------- Form ---------------</Text>
         <MTextInput
@@ -115,6 +115,6 @@ export default function TextInputShowcase() {
           />
         </View> */}
       </ScrollView>
-    </SafeAreaView>
+    </MSheet>
   );
 }

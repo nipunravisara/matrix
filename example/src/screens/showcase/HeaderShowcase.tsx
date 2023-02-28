@@ -1,10 +1,10 @@
 import React from 'react';
-import {MHeader, MLabel} from '../../../../';
-import {SafeAreaView, ScrollView, View} from 'react-native';
+import {MHeader, MLabel, MSheet} from '../../../../';
+import {ScrollView, View} from 'react-native';
 
 export default function HeaderShowcase() {
   return (
-    <SafeAreaView>
+    <MSheet styles={{paddingTop: 50}}>
       <ScrollView style={{backgroundColor: '#323232'}}>
         <View>
           <MLabel content={'Header with title'} styles={{marginVertical: 20}} />
@@ -91,6 +91,6 @@ export default function HeaderShowcase() {
           />
         </View>
       </ScrollView>
-    </SafeAreaView>
+    </MSheet>
   );
 }
