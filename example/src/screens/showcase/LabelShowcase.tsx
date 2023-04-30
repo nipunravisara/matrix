@@ -1,10 +1,10 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-import {MLabelVariations, MLabel} from '../../../../';
+import {Text, View} from 'react-native';
+import {MLabelVariations, MLabel, MSheet} from '../../../../';
 
 export default function LabelShowcase() {
   return (
-    <SafeAreaView>
+    <MSheet styles={{paddingTop: 50}}>
       <View>
         <Text style={{marginVertical: 20}}>l1</Text>
         <MLabel content="Label" type={MLabelVariations.l1} />
@@ -17,6 +17,6 @@ export default function LabelShowcase() {
         <Text style={{marginVertical: 20}}>l5</Text>
         <MLabel content="Label" type={MLabelVariations.l5} />
       </View>
-    </SafeAreaView>
+    </MSheet>
   );
 }

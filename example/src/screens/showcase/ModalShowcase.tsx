@@ -18,7 +18,7 @@ export default function ModalShowcase() {
         <MModal
           icon={
             <MIconButton
-              iconName={'pause-outline'}
+              iconName={'info-circle-outline'}
               type={MIconButtonVariations.Primary}
             />
           }
