@@ -3,12 +3,14 @@ import {TouchableHighlight, View, ViewStyle} from 'react-native';
 import MIcon from '../MIcon/MIcon';
 import MLabel from '../MLabel/MLabel';
 import {MButtonStyles} from './getButtonStyles';
+import {getTestID} from '../../utils/getTestId';
 
 export enum MButtonVariations {
   primary,
   secondary,
   ternary,
 }
+
 export interface TMButton {
   title?: string;
   type?: MButtonVariations;
@@ -16,8 +18,9 @@ export interface TMButton {
   styles?: ViewStyle;
   prefix?: JSX.Element | string;
   suffix?: JSX.Element | string;
-  onPress?: (data?: any) => void;
   disabled?: boolean;
+  onPress?: (data?: any) => void;
+  testId?: string;
 }
 
 export default function MButton(props: TMButton) {
@@ -27,12 +30,18 @@ export default function MButton(props: TMButton) {
     styles,
     prefix,
     suffix,
-    onPress = () => console.log('Pressed!'),
     disabled,
+    onPress = () => console.log('Pressed!'),
+    testId = getTestID({
+      component: 'Mbutton',
+      type: props.type || MButtonVariations.primary,
+      testId: props.testId,
+    }),
   } = props;
 
   return (
     <TouchableHighlight
+      testID={testId}
       disabled={disabled}
       underlayColor={MButtonStyles(props).containerPressed.color}
       style={[MButtonStyles(props).container, styles]}

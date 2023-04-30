@@ -63,11 +63,14 @@ const components = [
     image: '',
     screenName: 'DividerShowcase',
   },
+  {
+    name: 'Jumbotron',
+    image: '',
+    screenName: 'JumbotronShowcase',
+  },
 ];
 
 export default function Showcase(props: TShowcase) {
-  console.log(props);
-
   return (
     <MSheet>
       <View>

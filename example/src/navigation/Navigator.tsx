@@ -14,6 +14,7 @@ import IconButtonShowcase from '../screens/showcase/IconButtonShowcase';
 import ListItemShowcase from '../screens/showcase/ListItemShowcase';
 import ModalShowcase from '../screens/showcase/ModalShowcase';
 import DividerShowcase from '../screens/showcase/DividerShowcase';
+import JumbotronShowcase from '../screens/showcase/JumbotronShowcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -33,6 +34,7 @@ export type RootStackParamList = {
   ListItemShowcase: undefined;
   ModalShowcase: undefined;
   DividerShowcase: undefined;
+  JumbotronShowcase: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -60,6 +62,7 @@ export default function Navigator({
       <Stack.Screen name="ListItemShowcase" component={ListItemShowcase} />
       <Stack.Screen name="ModalShowcase" component={ModalShowcase} />
       <Stack.Screen name="DividerShowcase" component={DividerShowcase} />
+      <Stack.Screen name="JumbotronShowcase" component={JumbotronShowcase} />
     </Stack.Navigator>
   );
 }

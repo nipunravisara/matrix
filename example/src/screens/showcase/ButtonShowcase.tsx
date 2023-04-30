@@ -1,37 +1,55 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-import {MButton, MButtonVariations, MTitle, MTitleVariant} from '../../../../';
+import {Text, View} from 'react-native';
+import {
+  MButton,
+  MButtonVariations,
+  MDivider,
+  MDividerVariations,
+  MSheet,
+  MText,
+  MTextVariant,
+  MTitle,
+  MTitleVariant,
+} from '../../../../';
 
 export default function ButtonShowcase() {
   return (
-    <SafeAreaView style={{marginTop: 20}}>
-      <MTitle type={MTitleVariant.h5} content="Resting state" />
+    <MSheet styles={{paddingTop: 20}}>
       <View>
-        <Text style={{marginVertical: 20}}>Button primary</Text>
-        <MButton title="Button" type={MButtonVariations.primary} />
-      </View>
-      <View>
-        <Text style={{marginVertical: 20}}>Button secondary</Text>
-        <MButton title="Button" type={MButtonVariations.secondary} />
-      </View>
-      <View>
-        <Text style={{marginVertical: 20}}>Button ternary</Text>
-        <MButton title="Button" type={MButtonVariations.ternary} />
-      </View>
+        <MTitle type={MTitleVariant.h5} content="Resting state" />
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button primary" />
+          <MButton title="Button" type={MButtonVariations.primary} />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button secondary" />
+          <MButton title="Button" type={MButtonVariations.secondary} />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button ternary" />
+          <MButton title="Button" type={MButtonVariations.ternary} />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
 
-      <MTitle type={MTitleVariant.h5} content="Disabled state" />
-      <View>
-        <Text style={{marginVertical: 20}}>Button primary</Text>
-        <MButton title="Button" type={MButtonVariations.primary} disabled />
+        <MTitle type={MTitleVariant.h5} content="Disabled state" />
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button primary" />
+          <MButton title="Button" type={MButtonVariations.primary} disabled />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button secondary" />
+          <MButton title="Button" type={MButtonVariations.secondary} disabled />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
+        <View style={{marginVertical: 20}}>
+          <MText type={MTextVariant.p3} content="Button ternary" />
+          <MButton title="Button" type={MButtonVariations.ternary} disabled />
+          <MDivider type={MDividerVariations.Liner} />
+        </View>
       </View>
-      <View>
-        <Text style={{marginVertical: 20}}>Button secondary</Text>
-        <MButton title="Button" type={MButtonVariations.secondary} disabled />
-      </View>
-      <View>
-        <Text style={{marginVertical: 20}}>Button ternary</Text>
-        <MButton title="Button" type={MButtonVariations.ternary} disabled />
-      </View>
-    </SafeAreaView>
+    </MSheet>
   );
 }

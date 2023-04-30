@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, ViewStyle} from 'react-native';
-import {MHeaderStyles} from './getSheetStyles';
+import {MSheetStyles} from './getSheetStyles';
 
 export interface TMSheet {
   children: JSX.Element;
@@ -11,7 +11,7 @@ export default function MSheet(props: TMSheet) {
   const {children, styles} = props;
 
   return (
-    <SafeAreaView style={[MHeaderStyles(props).conatiner, styles]}>
+    <SafeAreaView style={[MSheetStyles(props).conatiner, styles]}>
       {children}
     </SafeAreaView>
   );

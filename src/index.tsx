@@ -32,6 +32,11 @@ import MDivider, {
   TMDivider,
   MDividerVariations,
 } from './components/MDivider/MDivider';
+import MJumbotron, {
+  TMJumbotron,
+  MJumbotronAlignment,
+  MJumbotronSizes,
+} from './components/MJumbotron/MJumbotron';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
@@ -62,3 +67,5 @@ export {MModal};
 export type {TMModal};
 export type {TMDivider};
 export {MDivider, MDividerVariations};
+export type {MJumbotronAlignment, MJumbotronSizes};
+export {TMJumbotron, MJumbotron};
