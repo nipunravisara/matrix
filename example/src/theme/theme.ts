@@ -62,10 +62,10 @@ import {
   ColorAllYellowYellow700,
   ColorAllYellowYellow800,
   ColorAllYellowYellow900,
-  ColorBorderBorderPrimary,
-  ColorBorderBorderSecondary,
   ColorBorderBorderInversePrimary,
   ColorBorderBorderInverseSecondary,
+  ColorBorderBorderPrimary,
+  ColorBorderBorderSecondary,
   ColorOverlayOverlay,
   ColorPrimaryAlert,
   ColorPrimaryInformation,
@@ -174,7 +174,7 @@ import {
 
 const theme: TTheme = {
   isDark: false,
-  roundness: 0,
+  roundness: 4,
   colors: {
     ColorPrimaryPrimaryColor: ColorPrimaryPrimaryColor,
     ColorPrimarySuccess: ColorPrimarySuccess,

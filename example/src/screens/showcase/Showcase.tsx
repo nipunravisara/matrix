@@ -1,9 +1,14 @@
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
+import {useForm} from 'react-hook-form';
 import {FlatList, View} from 'react-native';
-import {MHeader, MSheet} from '../../../../';
+import {MDivider, MSheet, MText, MTextInput, MTitle} from '../../../../';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
-import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+
+interface FormTypes {
+  searchTerm: string;
+}
 
 type TShowcase = NativeStackScreenProps<RootStackParamList, 'Showcase'>;
 
@@ -71,27 +76,42 @@ const components = [
 ];
 
 export default function Showcase(props: TShowcase) {
+  const {
+    control,
+    formState: {errors},
+  } = useForm<FormTypes>({
+    defaultValues: {
+      searchTerm: '',
+    },
+  });
+
   return (
     <MSheet>
-      <View>
-        <MHeader
-          title="Showcase"
-          styles={{backgroundColor: 'transparent', borderColor: 'transparent'}}
-          titleStyles={{fontSize: 24, color: '#fff'}}
+      <View style={{padding: 20}}>
+        <MTitle content={'Build the incredible'} />
+        <MText
+          content={
+            'Build your idea from design to the final product and deliver faster.'
+          }
         />
-        <View>
-          <FlatList
-            data={components}
-            numColumns={2}
-            renderItem={({item}) => (
-              <ShowcaseCard
-                name={item.name}
-                image={item.image}
-                screenName={item.screenName}
-              />
-            )}
-          />
-        </View>
+        <MDivider size={50} />
+        <MTextInput
+          name="searchTerm"
+          placeholder="Search components"
+          control={control}
+          errors={errors}
+        />
+        <FlatList
+          data={components}
+          numColumns={2}
+          renderItem={({item}) => (
+            <ShowcaseCard
+              name={item.name}
+              image={item.image}
+              screenName={item.screenName}
+            />
+          )}
+        />
       </View>
     </MSheet>
   );
