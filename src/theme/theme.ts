@@ -64,10 +64,10 @@ import {
   ColorAllYellowYellow700,
   ColorAllYellowYellow800,
   ColorAllYellowYellow900,
-  ColorBorderBorderPrimary,
-  ColorBorderBorderSecondary,
   ColorBorderBorderInversePrimary,
   ColorBorderBorderInverseSecondary,
+  ColorBorderBorderPrimary,
+  ColorBorderBorderSecondary,
   ColorOverlayOverlay,
   ColorPrimaryAlert,
   ColorPrimaryInformation,
@@ -308,7 +308,7 @@ interface TTheme {
 
 const theme: TTheme = {
   isDark: false,
-  roundness: 10,
+  roundness: 20,
   colors: {
     ColorPrimaryPrimaryColor: ColorPrimaryPrimaryColor,
     ColorPrimarySuccess: ColorPrimarySuccess,
@@ -413,140 +413,6 @@ const theme: TTheme = {
     ColorAllBaseBlack: ColorAllBaseBlack,
     ColorAllBaseWhite: ColorAllBaseWhite,
   },
-  // typography: {
-  //   TypographyHeadingHeading1: {
-  //     fontSize: TypographyHeadingHeading1FontSize,
-  //     fontFamily: `${TypographyHeadingHeading1FontFamily}-${getFontWeight(
-  //       TypographyHeadingHeading1FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyHeadingHeading1LetterSpacing,
-  //     lineHeight: TypographyHeadingHeading1LineHeight,
-  //   },
-
-  //   TypographyHeadingHeading2: {
-  //     fontSize: TypographyHeadingHeading2FontSize,
-  //     fontFamily: `${TypographyHeadingHeading2FontFamily}-${getFontWeight(
-  //       TypographyHeadingHeading2FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyHeadingHeading2LetterSpacing,
-  //     lineHeight: TypographyHeadingHeading2LineHeight,
-  //   },
-  //   TypographyHeadingHeading3: {
-  //     fontSize: TypographyHeadingHeading3FontSize,
-  //     fontFamily: `${TypographyHeadingHeading3FontFamily}-${getFontWeight(
-  //       TypographyHeadingHeading3FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyHeadingHeading3LetterSpacing,
-  //     lineHeight: TypographyHeadingHeading3LineHeight,
-  //   },
-
-  //   TypographyHeadingHeading4: {
-  //     fontSize: TypographyHeadingHeading4FontSize,
-  //     fontFamily: `${TypographyHeadingHeading4FontFamily}-${getFontWeight(
-  //       TypographyHeadingHeading4FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyHeadingHeading4LetterSpacing,
-  //     lineHeight: TypographyHeadingHeading4LineHeight,
-  //   },
-
-  //   TypographyHeadingHeading5: {
-  //     fontSize: TypographyHeadingHeading5FontSize,
-  //     fontFamily: `${TypographyHeadingHeading5FontFamily}-${getFontWeight(
-  //       TypographyHeadingHeading5FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyHeadingHeading5LetterSpacing,
-  //     lineHeight: TypographyHeadingHeading5LineHeight,
-  //   },
-
-  //   TypographyParagraphParagraph1: {
-  //     fontSize: TypographyParagraphParagraph1FontSize,
-  //     fontFamily: `${TypographyParagraphParagraph1FontFamily}-${getFontWeight(
-  //       TypographyParagraphParagraph1FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyParagraphParagraph1LetterSpacing,
-  //     lineHeight: TypographyParagraphParagraph1LineHeight,
-  //   },
-
-  //   TypographyParagraphParagraph2: {
-  //     fontSize: TypographyParagraphParagraph2FontSize,
-  //     fontFamily: `${TypographyParagraphParagraph2FontFamily}-${getFontWeight(
-  //       TypographyParagraphParagraph2FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyParagraphParagraph2LetterSpacing,
-  //     lineHeight: TypographyParagraphParagraph2LineHeight,
-  //   },
-  //   TypographyParagraphParagraph3: {
-  //     fontSize: TypographyParagraphParagraph3FontSize,
-  //     fontFamily: `${TypographyParagraphParagraph3FontFamily}-${getFontWeight(
-  //       TypographyParagraphParagraph3FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyParagraphParagraph3LetterSpacing,
-  //     lineHeight: TypographyParagraphParagraph3LineHeight,
-  //   },
-
-  //   TypographyParagraphParagraph4: {
-  //     fontSize: TypographyParagraphParagraph4FontSize,
-  //     fontFamily: `${TypographyParagraphParagraph4FontFamily}-${getFontWeight(
-  //       TypographyParagraphParagraph4FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyParagraphParagraph4LetterSpacing,
-  //     lineHeight: TypographyParagraphParagraph4LineHeight,
-  //   },
-
-  //   TypographyParagraphParagraph5: {
-  //     fontSize: TypographyParagraphParagraph5FontSize,
-  //     fontFamily: `${TypographyParagraphParagraph5FontFamily}-${getFontWeight(
-  //       TypographyParagraphParagraph5FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyParagraphParagraph5LetterSpacing,
-  //     lineHeight: TypographyParagraphParagraph5LineHeight,
-  //   },
-
-  //   TypographyLabelLabel1: {
-  //     fontSize: TypographyLabelLabel1FontSize,
-  //     fontFamily: `${TypographyLabelLabel1FontFamily}-${getFontWeight(
-  //       TypographyLabelLabel1FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyLabelLabel1LetterSpacing,
-  //     lineHeight: TypographyLabelLabel1LineHeight,
-  //   },
-
-  //   TypographyLabelLabel2: {
-  //     fontSize: TypographyLabelLabel2FontSize,
-  //     fontFamily: `${TypographyLabelLabel2FontFamily}-${getFontWeight(
-  //       TypographyLabelLabel2FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyLabelLabel2LetterSpacing,
-  //     lineHeight: TypographyLabelLabel2LineHeight,
-  //   },
-
-  //   TypographyLabelLabel3: {
-  //     fontSize: TypographyLabelLabel3FontSize,
-  //     fontFamily: `${TypographyLabelLabel3FontFamily}-${getFontWeight(
-  //       TypographyLabelLabel3FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyLabelLabel3LetterSpacing,
-  //     lineHeight: TypographyLabelLabel3LineHeight,
-  //   },
-
-  //   TypographyLabelLabel4: {
-  //     fontSize: TypographyLabelLabel4FontSize,
-  //     fontFamily: `${TypographyLabelLabel4FontFamily}-${getFontWeight(
-  //       TypographyLabelLabel4FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyLabelLabel4LetterSpacing,
-  //     lineHeight: TypographyLabelLabel4LineHeight,
-  //   },
-
-  //   TypographyLabelLabel5: {
-  //     fontSize: TypographyLabelLabel5FontSize,
-  //     fontFamily: `${TypographyLabelLabel5FontFamily}-${getFontWeight(
-  //       TypographyLabelLabel5FontWeight
-  //     )}`,
-  //     letterSpacing: TypographyLabelLabel5LetterSpacing,
-  //     lineHeight: TypographyLabelLabel5LineHeight,
-  //   },
-  // },
   typography: {
     TypographyHeadingHeading1: {
       fontSize: TypographyHeadingHeading1FontSize,

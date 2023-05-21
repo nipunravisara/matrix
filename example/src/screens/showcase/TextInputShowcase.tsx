@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import React from 'react';
-import {ScrollView, Text} from 'react-native';
-import {MButton, MSheet, MTextInput} from '../../../../';
-import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import React from 'react';
+import {useForm} from 'react-hook-form';
+import {ScrollView, Text} from 'react-native';
 import type {SchemaOf} from 'yup';
+import * as yup from 'yup';
+import {MButton, MSheet, MTextInput} from '../../../../';
 
 interface FormTypes {
   username: string;

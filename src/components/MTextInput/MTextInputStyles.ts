@@ -16,7 +16,8 @@ function getBorderColor(colors: Pick<TTheme, 'colors'>): string {
 }
 
 export const MTextInputStyles = (props: TMTextInput) => {
-  const {colors} = useTheme();
+  const {colors, roundness} = useTheme();
+  console.log(111, roundness);
 
   return StyleSheet.create({
     container: {
@@ -27,6 +28,7 @@ export const MTextInputStyles = (props: TMTextInput) => {
       borderColor: getBorderColor({colors}),
       borderWidth: 1,
       height: 52,
+      borderRadius: roundness,
       ...props.styles,
     },
     innerContainer: {

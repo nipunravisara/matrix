@@ -32,22 +32,22 @@ export default function MButton(props: TMButton) {
     suffix,
     disabled,
     onPress = () => console.log('Pressed!'),
-    testId = getTestID({
-      component: 'Mbutton',
-      type: props.type || MButtonVariations.primary,
-      testId: props.testId,
-    }),
+    testId,
   } = props;
 
   return (
     <TouchableHighlight
-      testID={testId}
-      disabled={disabled}
+      testID={getTestID({
+        component: MButton.name,
+        type: props.type || MButtonVariations.primary,
+        testId: testId,
+      })}
       underlayColor={MButtonStyles(props).containerPressed.color}
       style={[MButtonStyles(props).container, styles]}
       onPress={onPress}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
+      disabled={disabled}
     >
       <>
         <View style={MButtonStyles(props).leftContainer} />
@@ -96,54 +96,5 @@ export default function MButton(props: TMButton) {
         </View>
       </>
     </TouchableHighlight>
-    // <TouchableHighlight
-    //   disabled={disabled}
-    //   underlayColor={MButtonStyles(props).containerPressed.color}
-    //   style={[MButtonStyles(props).container, styles]}
-    //   onPress={onPress}
-    //   onPressIn={() => setPressed(true)}
-    //   onPressOut={() => setPressed(false)}
-    // >
-    //   <View style={MButtonStyles(props).innerContainer}>
-    //     {prefix && typeof prefix === 'string' ? (
-    //       <>
-    //         <MIcon
-    //           name={prefix}
-    //           color={
-    //             pressed
-    //               ? MButtonStyles(props).labelPressed.color
-    //               : MButtonStyles(props).label.color
-    //           }
-    //         />
-    //         <View style={{width: 4}} />
-    //       </>
-    //     ) : (
-    //       prefix
-    //     )}
-    //     <MLabel
-    //       content={title || ''}
-    //       styles={
-    //         pressed
-    //           ? MButtonStyles(props).labelPressed
-    //           : MButtonStyles(props).label
-    //       }
-    //     />
-    //     {suffix && typeof suffix === 'string' ? (
-    //       <>
-    //         <View style={{width: 4}} />
-    //         <MIcon
-    //           name={suffix}
-    //           color={
-    //             pressed
-    //               ? MButtonStyles(props).labelPressed.color
-    //               : MButtonStyles(props).label.color
-    //           }
-    //         />
-    //       </>
-    //     ) : (
-    //       suffix
-    //     )}
-    //   </View>
-    // </TouchableHighlight>
   );
 }

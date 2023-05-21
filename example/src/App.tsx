@@ -1,9 +1,8 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {StatusBar} from 'react-native';
+import {StatusBar, useColorScheme} from 'react-native';
 import Navigator from './navigation/Navigator';
 import theme from './theme/theme';
-import {useColorScheme} from 'react-native';
 
 import {ThemeProvider} from '../../';
 

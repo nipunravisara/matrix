@@ -19,7 +19,12 @@ export default function ButtonShowcase() {
         <MTitle type={MTitleVariant.h5} content="Resting state" />
         <View style={{marginVertical: 20}}>
           <MText type={MTextVariant.p3} content="Button primary" />
-          <MButton title="Button" type={MButtonVariations.primary} />
+          <MButton
+            title="Button"
+            type={MButtonVariations.primary}
+            prefix={'info-circle-outline'}
+            expanded
+          />
           <MDivider type={MDividerVariations.Liner} />
         </View>
         <View style={{marginVertical: 20}}>
