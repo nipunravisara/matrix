@@ -1,16 +1,18 @@
 import React from 'react';
-import {View, Text, ViewStyle} from 'react-native';
+import {View, ViewStyle} from 'react-native';
+import {MLabel, MText, MTitle} from '../..';
+import {MJumbotronStyles} from './getJumbotronStyles';
 
 export enum MJumbotronAlignment {
-  Left,
-  Center,
-  Right,
+  left,
+  center,
+  right,
 }
 
 export enum MJumbotronSizes {
-  Large,
-  Medium,
-  Small,
+  large,
+  medium,
+  small,
 }
 
 export interface TMJumbotron {
@@ -22,11 +24,30 @@ export interface TMJumbotron {
   styles?: ViewStyle;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function MJumbotron(_props: TMJumbotron) {
+export default function MJumbotron(props: TMJumbotron) {
+  const {title, description, overline} = props;
+
   return (
-    <View>
-      <Text>MJumbotron</Text>
+    <View style={MJumbotronStyles(props).container}>
+      {overline && (
+        <MLabel
+          content={overline}
+          type={MJumbotronStyles(props).sizes?.label}
+        ></MLabel>
+      )}
+      {title && (
+        <MTitle
+          content={title}
+          type={MJumbotronStyles(props).sizes?.title}
+        ></MTitle>
+      )}
+      {description && (
+        <MText
+          content={description}
+          styles={MJumbotronStyles(props).description}
+          type={MJumbotronStyles(props).sizes?.text}
+        />
+      )}
     </View>
   );
 }

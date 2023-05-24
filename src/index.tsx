@@ -1,49 +1,47 @@
 // theme
+import type {TTheme} from './theme/theme';
 import ThemeProvider, {TThemeProvider} from './theme/ThemeProvider';
 import useTheme from './theme/useTheme';
-import type {TTheme} from './theme/theme';
 import {hexToRgb} from './utils/getHexToRgb';
 // utils
 import {getFontVariation} from './utils/getFontWeight';
 
 // components
-import MText, {MTextVariant, TMText} from './components/MText/MText';
-import MTitle, {MTitleVariant, TMtitle} from './components/MTitle/Mtitle';
+import MButton, {
+  MButtonVariations,
+  TMButton,
+} from './components/MButton/MButton';
+import MDivider, {
+  MDividerVariations,
+  TMDivider,
+} from './components/MDivider/MDivider';
+import MHeader, {TMHeader} from './components/MHeader/MHeader';
 import MIcon, {TMIcon} from './components/MIcon/MIcon';
 import MIconButton, {
-  TMIconButton,
   MIconButtonSize,
   MIconButtonVariations,
+  TMIconButton,
 } from './components/MIconButton/MIconButton';
-import MLabel, {TMLabel, MLabelVariations} from './components/MLabel/MLabel';
-import MSheet, {TMSheet} from './components/MSheet/MSheet';
-import MButton, {
-  TMButton,
-  MButtonVariations,
-} from './components/MButton/MButton';
-import MHeader, {TMHeader} from './components/MHeader/MHeader';
-import MTextInput, {
-  TMTextInput,
-  MTextInputStateVariations,
-} from './components/MTextInput/MTextInput';
-import MListItem, {TMListItem} from './components/MListItem/MListItem';
-import MModal, {TMModal} from './components/MModal/MModal';
-import MDivider, {
-  TMDivider,
-  MDividerVariations,
-} from './components/MDivider/MDivider';
 import MJumbotron, {
-  TMJumbotron,
   MJumbotronAlignment,
   MJumbotronSizes,
+  TMJumbotron,
 } from './components/MJumbotron/MJumbotron';
+import MLabel, {MLabelVariations, TMLabel} from './components/MLabel/MLabel';
+import MListItem, {TMListItem} from './components/MListItem/MListItem';
+import MModal, {TMModal} from './components/MModal/MModal';
+import MSheet, {TMSheet} from './components/MSheet/MSheet';
+import MText, {MTextVariant, TMText} from './components/MText/MText';
+import MTextInput, {
+  MTextInputStateVariations,
+  TMTextInput,
+} from './components/MTextInput/MTextInput';
+import MTitle, {MTitleVariant, TMtitle} from './components/MTitle/Mtitle';
 
 export {ThemeProvider, useTheme};
 export type {TThemeProvider, TTheme};
 export {hexToRgb};
-
 export {getFontVariation};
-
 export {MSheet, TMSheet};
 export {MText, MTextVariant};
 export type {TMText};
@@ -67,5 +65,4 @@ export {MModal};
 export type {TMModal};
 export type {TMDivider};
 export {MDivider, MDividerVariations};
-export type {MJumbotronAlignment, MJumbotronSizes};
-export {TMJumbotron, MJumbotron};
+export {TMJumbotron, MJumbotron, MJumbotronAlignment, MJumbotronSizes};
