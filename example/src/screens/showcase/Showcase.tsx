@@ -2,7 +2,7 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import {FlatList, View} from 'react-native';
-import {MDivider, MSheet, MText, MTextInput, MTitle} from '../../../../';
+import {MDivider, MJumbotron, MSheet, MTextInput} from '../../../../';
 import ShowcaseCard from '../../components/ShowcaseCard';
 import type {RootStackParamList} from '../../navigation/Navigator';
 
@@ -75,7 +75,8 @@ const components = [
   },
 ];
 
-export default function Showcase(props: TShowcase) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function Showcase(_props: TShowcase) {
   const {
     control,
     formState: {errors},
@@ -88,11 +89,10 @@ export default function Showcase(props: TShowcase) {
   return (
     <MSheet>
       <View style={{padding: 20}}>
-        <MTitle content={'Build the incredible'} />
-        <MText
-          content={
-            'Build your idea from design to the final product and deliver faster.'
-          }
+        <MDivider size={50} />
+        <MJumbotron
+          title={'Build the incredible'}
+          description="Build your idea from design to the final product and deliver faster."
         />
         <MDivider size={50} />
         <MTextInput
@@ -101,6 +101,7 @@ export default function Showcase(props: TShowcase) {
           control={control}
           errors={errors}
         />
+        <MDivider size={50} />
         <FlatList
           data={components}
           numColumns={2}
