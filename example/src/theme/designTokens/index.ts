@@ -3,16 +3,16 @@
  * Generated on Sun, 25 Dec 2022 11:31:25 GMT
  */
 
-export const ColorPrimaryPrimaryColor = '#FF7E1D';
+export const ColorPrimaryPrimaryColor = '#4840ee';
 export const ColorPrimarySuccess = '#00a520';
 export const ColorPrimaryWarning = '#e6353d';
 export const ColorPrimaryAlert = '#ffb201';
 export const ColorPrimaryInformation = '#064ff3';
 export const ColorStateResting = '#616161';
-export const ColorStateActive = '#FF7E1D';
+export const ColorStateActive = '#4840ee';
 export const ColorStateDisabled = '#9e9e9e';
-export const ColorStatePressed50 = '#FFE9D4';
-export const ColorStatePressed700 = '#DD6D18';
+export const ColorStatePressed50 = '#eee9fe';
+export const ColorStatePressed700 = '#2e38e5';
 export const ColorTextPrimary = '#212121';
 export const ColorTextSecondary = '#616161';
 export const ColorTextTertiary = '#9e9e9e';
@@ -33,13 +33,13 @@ export const ColorSurfacePrimary50 = '#eee9fe';
 export const ColorSurfaceNeutral500 = '#9e9e9e';
 export const ColorBorderBorderPrimary = '#bdbdbd';
 export const ColorBorderBorderSecondary = '#f4f4f4';
-export const ColorBorderBorderInversePrimary = '#303030';
+export const ColorBorderBorderInversePrimary = '#656565';
 export const ColorBorderBorderInverseSecondary = '#1d1d1d';
 export const ColorOverlayOverlay = '#333147';
 export const ColorAllPrimaryPrimary900 = '#0026d6';
 export const ColorAllPrimaryPrimary800 = '#0032df';
 export const ColorAllPrimaryPrimary700 = '#2e38e5';
-export const ColorAllPrimaryPrimary600 = '#FF7E1D';
+export const ColorAllPrimaryPrimary600 = '#4840ee';
 export const ColorAllPrimaryPrimary500 = '#5645f5';
 export const ColorAllPrimaryPrimary400 = '#7861f8';
 export const ColorAllPrimaryPrimary300 = '#947ffa';

@@ -22,7 +22,7 @@ export default function ButtonShowcase() {
           <MButton
             title="Button"
             type={MButtonVariations.primary}
-            prefix={'info-circle-outline'}
+            prefix={'stop-outline'}
             expanded
           />
           <MDivider type={MDividerVariations.Liner} />
@@ -37,7 +37,6 @@ export default function ButtonShowcase() {
           <MButton title="Button" type={MButtonVariations.ternary} />
           <MDivider type={MDividerVariations.Liner} />
         </View>
-
         <MTitle type={MTitleVariant.h5} content="Disabled state" />
         <View style={{marginVertical: 20}}>
           <MText type={MTextVariant.p3} content="Button primary" />

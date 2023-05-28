@@ -128,6 +128,8 @@ export const MButtonStyles = (props: TMButton) => {
     },
     innerContainer: {
       flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     leftContainer: {
       flex: getButtonSpred(expanded, suffix),

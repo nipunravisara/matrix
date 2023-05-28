@@ -12,9 +12,5 @@ export interface TMIcon {
 export default function MIcon(props: TMIcon) {
   const {iconName, color, styles} = props;
 
-  return (
-    <View style={[{alignSelf: 'flex-start'}, styles]}>
-      {GetIcon({iconName, iconColor: color})}
-    </View>
-  );
+  return <View style={styles}>{GetIcon({iconName, iconColor: color})}</View>;
 }
