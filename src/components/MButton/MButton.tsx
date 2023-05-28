@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {TouchableHighlight, View, ViewStyle} from 'react-native';
+import {getTestID} from '../../utils/getTestId';
 import MIcon from '../MIcon/MIcon';
 import MLabel from '../MLabel/MLabel';
 import {MButtonStyles} from './getButtonStyles';
-import {getTestID} from '../../utils/getTestId';
 
 export enum MButtonVariations {
   primary,
@@ -20,6 +20,7 @@ export interface TMButton {
   suffix?: JSX.Element | string;
   disabled?: boolean;
   onPress?: (data?: any) => void;
+  onLongPress?: (data?: any) => void;
   testId?: string;
 }
 
@@ -32,6 +33,7 @@ export default function MButton(props: TMButton) {
     suffix,
     disabled,
     onPress = () => console.log('Pressed!'),
+    onLongPress = () => console.log('Long pressed!'),
     testId,
   } = props;
 
@@ -45,6 +47,7 @@ export default function MButton(props: TMButton) {
       underlayColor={MButtonStyles(props).containerPressed.color}
       style={[MButtonStyles(props).container, styles]}
       onPress={onPress}
+      onLongPress={onLongPress}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
       disabled={disabled}

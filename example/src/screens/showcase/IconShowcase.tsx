@@ -103,7 +103,6 @@ const icons: TIcons[] = [
   {
     name: 'play-twotone',
   },
-
   {
     name: 'trash-outline',
   },

@@ -16,6 +16,7 @@ export default function ListItemShowcase() {
             <MIconButton key="delete" iconName={'pause-outline'} />,
           ]}
           divider
+          onPress={() => console.log('Pressed!')}
         />
         <MListItem
           title="Title"
@@ -23,12 +24,14 @@ export default function ListItemShowcase() {
           caption="23.23AP"
           prefix={<MIconButton iconName={'pause-outline'} />}
           divider
+          onPress={() => console.log('Pressed!')}
         />
         <MListItem
           title="Title"
           subtitle="subtitle"
           caption="23.23AP"
           onPress={() => console.log('Pressed!')}
+          onLongPress={() => console.log('Long pressed!')}
         />
       </View>
     </MSheet>
