@@ -1,20 +1,21 @@
-import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
+import React from 'react';
 
 import GetStarted from '../screens/GetStarted';
-import TextShowcase from '../screens/showcase/TextShowcase';
-import TitleShowcase from '../screens/showcase/TitleShowcase';
-import IconShowcase from '../screens/showcase/IconShowcase';
 import ButtonShowcase from '../screens/showcase/ButtonShowcase';
-import LabelShowcase from '../screens/showcase/LabelShowcase';
+import DividerShowcase from '../screens/showcase/DividerShowcase';
 import HeaderShowcase from '../screens/showcase/HeaderShowcase';
-import Showcase from '../screens/showcase/Showcase';
-import TextInputShowcase from '../screens/showcase/TextInputShowcase';
 import IconButtonShowcase from '../screens/showcase/IconButtonShowcase';
+import IconShowcase from '../screens/showcase/IconShowcase';
+import JumbotronShowcase from '../screens/showcase/JumbotronShowcase';
+import LabelShowcase from '../screens/showcase/LabelShowcase';
 import ListItemShowcase from '../screens/showcase/ListItemShowcase';
 import ModalShowcase from '../screens/showcase/ModalShowcase';
-import DividerShowcase from '../screens/showcase/DividerShowcase';
-import JumbotronShowcase from '../screens/showcase/JumbotronShowcase';
+import RadioButtonShowcase from '../screens/showcase/RadioButtonShowcase';
+import Showcase from '../screens/showcase/Showcase';
+import TextInputShowcase from '../screens/showcase/TextInputShowcase';
+import TextShowcase from '../screens/showcase/TextShowcase';
+import TitleShowcase from '../screens/showcase/TitleShowcase';
 
 type NavigatorProps = {
   initialScreen: keyof RootStackParamList | undefined;
@@ -35,6 +36,7 @@ export type RootStackParamList = {
   ModalShowcase: undefined;
   DividerShowcase: undefined;
   JumbotronShowcase: undefined;
+  RadioButtonShowcase: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -47,7 +49,7 @@ export default function Navigator({
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName={initialScreen}
+      initialRouteName={'RadioButtonShowcase'}
     >
       <Stack.Screen name="GetStarted" component={GetStarted} />
       <Stack.Screen name="Showcase" component={Showcase} />
@@ -63,6 +65,10 @@ export default function Navigator({
       <Stack.Screen name="ModalShowcase" component={ModalShowcase} />
       <Stack.Screen name="DividerShowcase" component={DividerShowcase} />
       <Stack.Screen name="JumbotronShowcase" component={JumbotronShowcase} />
+      <Stack.Screen
+        name="RadioButtonShowcase"
+        component={RadioButtonShowcase}
+      />
     </Stack.Navigator>
   );
 }

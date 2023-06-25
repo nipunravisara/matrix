@@ -5,6 +5,8 @@ import {
   MButtonVariations,
   MDivider,
   MDividerVariations,
+  MLabel,
+  MLabelVariations,
   MSheet,
   MText,
   MTextVariant,
@@ -16,6 +18,22 @@ export default function ButtonShowcase() {
   return (
     <MSheet styles={{paddingTop: 20}}>
       <View>
+        <View style={{paddingTop: 20}}>
+          <MLabel content={'Types'} type={MLabelVariations.l3} />
+          <MText content="Primary" type={MTextVariant.p4} />
+          <MText content="Secondary" type={MTextVariant.p4} />
+          <MText content="Ternery" type={MTextVariant.p4} />
+        </View>
+        <View style={{paddingTop: 20}}>
+          <MLabel content={'State'} type={MLabelVariations.l3} />
+          <MText content="Active" type={MTextVariant.p4} />
+          <MText content="Dissabled" type={MTextVariant.p4} />
+        </View>
+        <View style={{paddingTop: 20}}>
+          <MLabel content={'Extras'} type={MLabelVariations.l3} />
+          <MText content="Suffix" type={MTextVariant.p4} />
+          <MText content="Preffix" type={MTextVariant.p4} />
+        </View>
         <MTitle type={MTitleVariant.h5} content="Resting state" />
         <View style={{marginVertical: 20}}>
           <MText type={MTextVariant.p3} content="Button primary" />
