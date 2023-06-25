@@ -174,7 +174,7 @@ import {
 
 const theme: TTheme = {
   isDark: false,
-  roundness: 4,
+  roundness: 5,
   colors: {
     ColorPrimaryPrimaryColor: ColorPrimaryPrimaryColor,
     ColorPrimarySuccess: ColorPrimarySuccess,
