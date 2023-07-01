@@ -14,12 +14,12 @@ export default function RadioButtonShowcase() {
     {name: 'Two', value: 'Two', selected: false},
   ]);
 
-  function onPress(listItem: Tlist) {
+  function onPress(pressedItem: Tlist) {
     setList(
       list.map((item) =>
-        item.value === listItem.value
-          ? {...listItem, selected: !item.selected}
-          : item
+        item.value === pressedItem.value
+          ? {...item, selected: true}
+          : {...item, selected: false}
       )
     );
   }
